@@ -1,0 +1,31 @@
+.masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: linear-gradient(to bottom, #{fade-out($black, .9)} 0%,#{fade-out($black, .5)} 75%,$black 100%), url('../img/bg-masthead.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  h2 {
+    font-family: 'Varela Round';
+    letter-spacing: 0.8rem;
+  }
+  @media(min-width: 768px) {
+    h2 {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+    }
+  }
+  @media(min-width: 992px) {
+    height: 100vh;
+    padding: 0;
+    h2 {
+      font-size: 4rem;
+      line-height: 4rem;
+      letter-spacing: 0.8rem;
+    }
+  }
+}

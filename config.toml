@@ -1,0 +1,11 @@
+baseURL = "https://willamettevalleybandb.com/"
+languageCode = "en-us"
+title = "Willamette Valley Bed and Breakfast - Newberg, Oregon"
+
+theme = "ananke"
+Paginate = 3
+enableRobotsTXT = true
+[params]
+  background_color_class = "bg-black"
+  featured_image = "/images/gohugo-default-sample-hero-image.jpg"
+  recent_posts_number = 2

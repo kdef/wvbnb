@@ -1,0 +1,61 @@
+.reserve-section {
+  padding: 5rem 0;
+  .form {
+    input {
+      box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0,0,0,.1) !important;
+      padding: 1.25rem 2rem;
+      height: auto;
+      font-family: 'Varela Round';
+      font-size: 80%;
+      text-transform: uppercase;
+      letter-spacing: 0.15rem;
+      border: 0;
+    }
+  }
+}
+
+.available-section {
+  padding-bottom: 5rem;
+}
+
+//[class*="col-"] {
+.form-col {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgba(86, 61, 124, .15);
+  border: 1px solid rgba(86, 61, 124, .2);
+}
+
+tr {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+td {
+  padding-left: 1px;
+  height: 36px;
+  vertical-align: middle;
+  border-left-color: white;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-spacing: 0px 0px;
+
+}
+
+td.unavailable {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3BhY2U9InByZXNlcnZlIiB2ZXJzaW9uPSIxLjEiIHN0eWxlPSJzaGFwZS1yZW5kZXJpbmc6Z2VvbWV0cmljUHJlY2lzaW9uO3RleHQtcmVuZGVyaW5nOmdlb21ldHJpY1ByZWNpc2lvbjtpbWFnZS1yZW5kZXJpbmc6b3B0aW1pemVRdWFsaXR5OyIgdmlld0JveD0iMCAwIDg0NyA4NDciIHg9IjBweCIgeT0iMHB4IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4KICAgCiAgICAuZmlsMCB7ZmlsbDojMDAwMDAwfQogICAKICA8L3N0eWxlPjwvZGVmcz48Zz48cGF0aCBjbGFzcz0iZmlsMCIgZD0iTTEwMyAyMmw2NDAgMGM0NSwwIDgyLDM3IDgyLDgxbDAgNjQwYzAsNDUgLTM3LDgyIC04Miw4MmwtNjQwIDBjLTQ0LDAgLTgxLC0zNyAtODEsLTgybDAgLTY0MGMwLC00NCAzNywtODEgODEsLTgxem0zMjAgMzQwbDEzNyAtMTM3YzQxLC00MSAxMDIsMjEgNjIsNjFsLTEzNyAxMzcgMTM3IDEzN2M0MCw0MSAtMjEsMTAyIC02Miw2MmwtMTM3IC0xMzcgLTEzNyAxMzdjLTQwLDQwIC0xMDIsLTIxIC02MSwtNjJsMTM3IC0xMzcgLTEzNyAtMTM3Yy00MSwtNDAgMjEsLTEwMiA2MSwtNjFsMTM3IDEzN3oiPjwvcGF0aD48L2c+PC9zdmc+");
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+tr.odd td {
+  background-color: rgb(100, 199, 233);
+}
+
+tr td.room {
+  font-weight: 700;
+  background-color: rgb(248, 249, 250);
+}
