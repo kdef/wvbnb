@@ -57,7 +57,7 @@
   <header class="masthead">
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
-    <h2 id="slogan" class="text-white mx-auto mt-2 mb-5">{{ .Params.slogan }}</h2>
+        <h2 id="slogan" class="text-white mx-auto mt-2 mb-5">{{ .Params.slogan }}</h2>
         <a href="#reserve" class="btn btn-primary js-scroll-trigger">Book Now</a>
       </div>
     </div>
@@ -69,16 +69,14 @@
       <div class="row">
         <div id="about-content" class="col-lg-8 mx-auto mb-5">
           <h2 id="about-title" class="text-white mb-4">{{ .Params.about_title }}</h2>
-      <p id="about-text" class="text-white-50">{{ .Params.about_text }}</p>
-      <a href="/about"><i class="fas fa-info-circle text-primary"></i> Learn more about us</a>
-      <a href="/location" class="mx-2"><i class="fas fa-map-marker-alt text-primary"></i> Where to find us</a>
-      <a href="/breakfast"><i class="fas fa-utensils text-primary"></i> Curious about breakfast?</a>
+          <p id="about-text" class="text-white-50">{{ .Params.about_text }}</p>
+          <a href="/about"><i class="fas fa-info-circle text-primary"></i> Learn more about us</a>
+          <a href="/location" class="mx-2"><i class="fas fa-map-marker-alt text-primary"></i> Where to find us</a>
+          <a href="/breakfast"><i class="fas fa-utensils text-primary"></i> Curious about breakfast?</a>
         </div>
-      <img id="about-image" src="{{ .Params.about_image }}" class="img-fluid" alt="">
       </div>
     </div>
   </section>
-
 
   <section id="reserve" class="reserve-section text-center bg-light">
     <div class="container">
@@ -86,7 +84,7 @@
         <div class="col-md-10 col-lg-8 mx-auto text-center">
 
           <h2 class="mb-1">Make a Reservation</h2>
-      <p class="mb-4">{{ .Params.reserve_text }}</p>
+          <p class="mb-4">{{ .Params.reserve_text }}</p>
 
           <form action="http://localhost:8080/api/v0/reservations" method="POST">
             <div class="row row-sm-offset">
@@ -150,7 +148,7 @@
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
             <h4>{{ .Params.regional_title }}</h4>
-        <p class="text-black-50 mb-0">{{ .Params.regional_text }}</p>
+            <p class="text-black-50 mb-0">{{ .Params.regional_text }}</p>
           </div>
         </div>
       </div>
@@ -164,8 +162,8 @@
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-left">
-        <h4 class="text-white">{{ .Params.suites_title }}</h4>
-        <p class="mb-0 text-white-50">{{ .Params.suites_text }}</p>
+                <h4 class="text-white">{{ .Params.suites_title }}</h4>
+                <p class="mb-0 text-white-50">{{ .Params.suites_text }}</p>
                 <hr class="d-none d-lg-block mb-0 ml-0">
               </div>
             </div>
@@ -182,8 +180,8 @@
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-right">
-        <h4 class="text-white">{{ .Params.breakfast_title }}</h4>
-        <p class="mb-0 text-white-50">{{ .Params.breakfast_text }}</p>
+                <h4 class="text-white">{{ .Params.breakfast_title }}</h4>
+                <p class="mb-0 text-white-50">{{ .Params.breakfast_text }}</p>
                 <hr class="d-none d-lg-block mb-0 mr-0">
               </div>
             </div>
@@ -329,9 +327,6 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
