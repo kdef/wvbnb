@@ -1,7 +1,7 @@
 ---
 title: "About our Bed and Breakfast"
 description: "Willamette Valley Bed and Breakfast"
-featured_image: about.jpg
+featured_image: about.png
 featured_image_alt_txt: "The Willamette Valley bed and breakfast, it looks nice."
 ---
 
