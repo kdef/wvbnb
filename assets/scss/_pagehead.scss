@@ -1,0 +1,30 @@
+.pagehead {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  min-height: 300px;
+  padding: 15rem 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  h2 {
+    font-family: 'Varela Round';
+    letter-spacing: 0.8rem;
+  }
+  @media(min-width: 768px) {
+    h2 {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+    }
+  }
+  @media(min-width: 992px) {
+    height: 60vh;
+    padding: 0;
+    h2 {
+      font-size: 4rem;
+      line-height: 4rem;
+      letter-spacing: 0.8rem;
+    }
+  }
+}
