@@ -1,8 +1,7 @@
+{{ $featured_image := .Params.featured_image }}
 <div class="card">
-  {{ if .Params.featured_image }}
-    {{ $featured_image := .Params.featured_image }}
-    {{ $featured_image_src := .Page.Resources.GetMatch $featured_image }}
-    <img class="card-img-top" src="{{ $featured_image_src.Permalink }}" alt="{{ .Params.featured_image_alt_text }}">
+  {{ if $featured_image }}
+    <img class="card-img-top" src="/img/{{ $featured_image }}" alt="{{ .Params.featured_image_alt_text }}">
   {{ end }}
   <div class="card-body">
     <h5 class="card-title">{{ .Title }}</h5>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>{{ .Title }}</title>
+
+  {{ partial "stylesheets.html" . }}
+
+  <!-- Custom styles for this template -->
+  {{ $style := resources.Get "scss/grayscale.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+</head>
+
+<body id="page-top">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="/">WVBNB</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/posts" data-target="#main">Posts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/reserve" data-target="#contact">Reserve Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+{{ partial "a-page-header.html" .Page }}
+
+  <section id="main" class="post-section bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto">
+          <h2 class="mb-1">{{ .Title }}</h2>
+          <p id="date"> {{ .Date.Format "Jan 2, 2006" }} </p>
+          <hr>
+          <p>{{ .Content }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<aside id="meta">
+    <div>
+        {{ with .PrevInSection }}
+          <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
+        {{ end }}
+        {{ with .NextInSection }}
+          <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
+        {{ end }}
+    </div>
+</aside>
+
+  {{ partial "footer.html" . }}
+
+  {{ partial "scripts.html" . }}
+
+  <!-- Custom scripts for this template -->
+  {{ $js := resources.Get "js/grayscale.js" | resources.Minify | resources.Fingerprint }}
+  <script src="{{ $js.Permalink }}"></script>
+</body>
+</html>
