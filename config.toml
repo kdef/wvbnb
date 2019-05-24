@@ -1,8 +1,7 @@
-baseURL = "https://willamettevalleybandb.com/"
+baseURL = "https://test.willamettevalleybandb.com/"
 languageCode = "en-us"
 title = "Willamette Valley Bed and Breakfast - Newberg, Oregon"
 
-theme = "ananke"
 Paginate = 3
 enableRobotsTXT = true
 [params]
