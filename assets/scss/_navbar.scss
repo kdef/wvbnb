@@ -71,6 +71,18 @@
           border-bottom: 0.25rem solid $primary;
         }
       }
+      .logo {
+        height: 3rem;
+        width: 4.5rem;
+        display: inline-block;
+        float: left;
+        background-image: url('/img/WVBB3_logo.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .brand {
+        display: none;
+      }
     }
   }
 }
