@@ -15,6 +15,17 @@ collections:
       - {label: "Featured Image", name: "featured_image", widget: "image"}
       - {label: "Featured Image Alt Text", name: "featured_image_alt_text", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "events"
+    label: "Events"
+    folder: "content/events"
+    create: true
+    fields:
+      - {label: "Title", name: "title", wdiget: "string"}
+      - {label: "Event Date", name: "date", wdiget: "datetime"}
+      - {label: "Link", name: "external_link", wdiget: "string"}
+      - {label: "Featured Image", name: "featured_image", wdiget: "image"}
+      - {label: "Featured Image Alt Text", name: "featured_image_alt_text", wdiget: "string"}
+      - {label: "Description", name: "body", wdiget: "markdown"}
   - name: "pages"
     label: "Pages"
     files:
