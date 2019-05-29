@@ -4,7 +4,11 @@ title = "Willamette Valley Bed and Breakfast - Newberg, Oregon"
 
 Paginate = 3
 enableRobotsTXT = true
+
 [params]
+  default_featured_image = "/img/bg-masthead.md"
+
+  recent_events_per_month = 10
+  recent_events_months = ["September", "June"]
+
   background_color_class = "bg-black"
-  featured_image = "/images/gohugo-default-sample-hero-image.jpg"
-  recent_posts_number = 3

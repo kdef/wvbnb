@@ -43,6 +43,9 @@
             <a class="nav-link js-scroll-trigger" href="#info">Information</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#news">News</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
           </li>
         </ul>
@@ -192,32 +195,36 @@
   <section id="news" class="news-section bg-light">
   <div class="container">
     <div class="row">
-  {{/* Define a section to pull recent posts from. For Hugo 0.20 this will default to the section with the most number of pages. */}}
-  {{/* []string{"posts"} */}}
-  {{ $mainSections := .Site.Params.mainSections | default (slice "post") }}
-
-  {{/* list of pages in this section */}}
-  {{/* page.Pages{(*hugolib.pageState)(0xc000a1aa20), (*hugolib.pageState)(0xc000a1a7e0), (*hugolib.pageState)(0xc000a1a360), (*hugolib.pageState)(0xc000a1a120), (*hugolib.pageState)(0xc000a1a5a0)}*/}}
-  {{ $section := where .Site.RegularPages "Section" "in" $mainSections }}
-
-  {{/* num posts in section */}}
-  {{ $section_count := len $section }}
-
-  {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
-
-  {{ if ge $section_count 1 }}
       <div class="col-md-10 col-lg-8 mx-auto text-center">
         <h2 class="mb-1">News</h2>
+        <p class="mb-4">{{ .Params.news_text | markdownify }}</p>
       </div>
     </div>
     <div class="row">
-      {{ range (first $n_posts $section) }}
+      <div class="col-md-4 col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            {{/* by default Hugo only considers content with a `date` in the past. use -F to show events with a future date */}}
+            {{ $events_by_date := (where .Site.RegularPages "Section" "events").GroupByDate "January" }}
+            {{ range where $events_by_date "Key" "in" .Site.Params.recent_events_months }}
+            <h5 class="card-title">Events for {{ .Key }}</h5>
+            <ul class="card-text">
+            {{ $n_events := $.Param "recent_events_per_month" | default 10 }}
+            {{ range first $n_events .Pages }}
+              <li><h5>{{ .Title }}</h5><p>{{ .Date.Format "Mon, Jan 2, 2006" }}</p><p>{{ .Summary }}</p></li>
+            {{ end }}
+            </ul>
+            {{ end }}
+            <a href="/events" class="btn btn-primary">All Events</a>
+          </div>
+        </div>
+      </div>
+      {{ $n_posts := $.Param "recent_posts_number" | default 2 }}
+      {{ range first $n_posts (where .Site.RegularPages "Section" "posts") }}
       <div class="col-md-4 col-lg-4">
         {{ partial "summary-with-image.html" . }}
       </div>
       {{ end }}
-  {{ end }}
-
     </div>
   </div>
   </section>
