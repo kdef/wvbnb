@@ -1,5 +1,6 @@
 backend:
-  name: test-repo
+  name: git-gateway
+  branch: netlify-cms
 publish_mode: editorial_workflow
 media_folder: "static/img/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/img/uploads" # The src attribute for uploaded media will begin with /images/uploads
@@ -38,7 +39,7 @@ collections:
           - {label: "Featured Image", name: "featured_image", widget: "image"}
           - {label: "Featured Image Alt Text", name: "featured_image_alt_text", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - file: "content/reserver/_index.md"
+      - file: "content/reserve/_index.md"
         name: "reserve"
         label: "Reserve"
         fields: # The fields for each document, usually in front matter
