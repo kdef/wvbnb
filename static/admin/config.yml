@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: kdef/wvbnb
   branch: netlify-cms
 publish_mode: editorial_workflow
 media_folder: "static/img/uploads" # Media files will be stored in the repo under static/images/uploads
