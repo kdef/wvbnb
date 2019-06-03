@@ -2,7 +2,7 @@
 title: "Building the Addition"
 date: 2019-05-21T21:36:50-07:00
 draft: true
-featured_image: "posts/construction_20190323.jpg"
+featured_image: /img/posts/construction_20190323.jpg
 featured_image_alt_text: "Wood-framed house addition under construction"
 ---
 
