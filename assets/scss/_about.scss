@@ -2,3 +2,9 @@
   padding-top: 5rem;
   //background: linear-gradient(to bottom, $black 0%,#{fade-out($black, .1)} 75%,#{fade-out($black, .2)} 100%);
 }
+.reserve-section {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
