@@ -1,7 +1,7 @@
 ---
 title: About our Bed and Breakfast
 description: Willamette Valley Bed and Breakfast
-featured_image: /img/about.png
+featured_image: /img/about.jpg
 featured_image_alt_text: A wine glass with red wine
 ---
 We started building the dream of our bed and breakfast many years ago. We are delighted to share our beautiful home with you. Maureen has a background in art and retail while Dan has a history in hotels and sales. After time in Napa and Washington, our love of wine has brought us to the Willamette Valley.

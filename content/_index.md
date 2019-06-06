@@ -7,7 +7,7 @@ slogan: "Explore the Willamette Valley."
 
 about_title: "Home in Oregon Wine Country"
 about_text: "Willamette Valley Bed and Breakfast is our home in Newberg, Oregon and we would love to share it with you. To stay with us you can reserve online now or give us a call. We look forward to seeing you!"
-about_image: "/img/about.png"
+about_image: "/img/about.jpg"
 
 reserve_text: "We will be pleased to offer secure online reservations when we open later this year. For inquiries about advanced reservations feel free to give us a call."
 
