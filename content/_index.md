@@ -20,7 +20,7 @@ suites_text: "Custom built with all of your comforts in mind.  Each room has a k
 breakfast_title: "Home Cooking"
 breakfast_text: "Breakfast is served each morning at 9 A.M. in the Great Room.  We look forward to sharing our gourmet breakfast with you and your new friends. Gluten free, vegetarian, allergies and other food restrictions can be accommodated upon request."
 
-news_text: "See our list of [upcoming local events](/events) and other [updates from us](/posts)"
+news_text: "See our list of [upcoming local events](/events) and other [updates from us](/posts)."
 news_month: "May"
 ---
 Content
