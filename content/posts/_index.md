@@ -1,7 +1,9 @@
 ---
-title: Bed and Breakfast and Blog
+title: Blog
 description: Willamette Valley Bed and Breakfast
-featured_image: /img/about.jpg
-featured_image_alt_text: A wine glass with red wine
+featured_image: 
+featured_image_alt_text: 
 ---
-News
+Coming Soon!
+
+Look here for personal updates on our construction process. Dan will detail his and Maureen’s experiences while bringing the Bed & Breakfast to life.
