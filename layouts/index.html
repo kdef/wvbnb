@@ -204,32 +204,6 @@
         <p class="mb-4">{{ .Params.news_text | markdownify }}</p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-4 col-lg-4">
-        <div class="card">
-          <div class="card-body">
-            {{/* by default Hugo only considers content with a `date` in the past. use -F to show events with a future date */}}
-            {{ $events_by_date := (where .Site.RegularPages "Section" "events").GroupByDate "January" }}
-            {{ range where $events_by_date "Key" "in" .Site.Params.recent_events_months }}
-            <h5 class="card-title">Events for {{ .Key }}</h5>
-            <ul class="card-text">
-            {{ $n_events := $.Param "recent_events_per_month" | default 10 }}
-            {{ range first $n_events .Pages }}
-              <li><h5>{{ .Title }}</h5><p>{{ .Date.Format "Mon, Jan 2, 2006" }}</p><p>{{ .Summary }}</p></li>
-            {{ end }}
-            </ul>
-            {{ end }}
-            <a href="/events" class="btn btn-primary">All Events</a>
-          </div>
-        </div>
-      </div>
-      {{ $n_posts := $.Param "recent_posts_number" | default 2 }}
-      {{ range first $n_posts (where .Site.RegularPages "Section" "posts") }}
-      <div class="col-md-4 col-lg-4">
-        {{ partial "summary-with-image.html" . }}
-      </div>
-      {{ end }}
-    </div>
   </div>
   </section>
 
