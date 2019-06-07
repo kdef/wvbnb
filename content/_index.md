@@ -3,7 +3,7 @@ title: "Willamette Valley Bed and Breakfast - Newberg, OR"
 featured_image: '/img/bg-masthead.jpg'
 description: "willamette Valley Bed and Breakfast is an upscale retreat in the heart of Oregon's wine country."
 
-slogan: "Explore the Willamette Valley."
+slogan: "Explore the Willamette Valley"
 
 about_title: "Home in Oregon Wine Country"
 about_text: "Willamette Valley Bed and Breakfast is our home in Newberg, Oregon and we would love to share it with you. To stay with us you can reserve online now or give us a call. We look forward to seeing you!"
