@@ -14,7 +14,7 @@
 
   <!-- Custom styles for this template -->
   {{ $style := resources.Get "scss/grayscale.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}">
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 </head>
@@ -204,6 +204,14 @@
         <p class="mb-4">{{ .Params.news_text | markdownify }}</p>
       </div>
     </div>
+    <div class="row">
+      {{ $n_posts := $.Param "recent_posts_number" | default 2 }}
+      {{ range first $n_posts (where .Site.RegularPages "Section" "posts") }}
+      <div class="col-md-4 col-lg-4">
+        {{ partial "card-with-image.html" . }}
+      </div>
+      {{ end }}
+    </div>
   </div>
   </section>
 
@@ -231,7 +239,7 @@
 
   <!-- Custom scripts for this template -->
   {{ $js := resources.Get "js/grayscale.js" | resources.Minify | resources.Fingerprint }}
-  <script src="{{ $js.Permalink }}"></script>
+  <script src="{{ $js.RelPermalink }}"></script>
   <script>
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
