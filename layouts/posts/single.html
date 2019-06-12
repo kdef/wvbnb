@@ -8,19 +8,19 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>{{ .Title }}</title>
+  <title>{{ .Title }} - Willamette Valley Bed and Breakfast</title>
 
   {{ partial "stylesheets.html" . }}
 
   <!-- Custom styles for this template -->
   {{ $style := resources.Get "scss/grayscale.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}">
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
 </head>
 
 <body id="page-top">
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <nav class="navbar navbar-shrink navbar-expand-lg navbar-light fixed-top" id="pageNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="/">WVBNB</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,17 +30,17 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/posts" data-target="#main">Posts</a>
+            <a class="nav-link js-scroll-trigger" href="/posts" data-target="#main">ALl Posts</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/reserve" data-target="#contact">Reserve Now</a>
+            <a class="nav-link js-scroll-trigger" href="/#reserve" data-target="#contact">Reserve Now</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-{{ partial "a-page-header.html" .Page }}
+  {{ partial "a-page-header.html" .Page }}
 
   <section id="main" class="post-section bg-light">
     <div class="container">
@@ -49,22 +49,15 @@
           <h2 class="mb-1">{{ .Title }}</h2>
           <p id="date"> {{ .Date.Format "Jan 2, 2006" }} </p>
           <hr>
-          <p>{{ .Content }}</p>
+          <div class="content">{{ .Content }}</div>
         </div>
+      </div>
+      <div class="text-center">
+        <a class="btn btn-primary" href="/posts">All Posts</a>
       </div>
     </div>
   </section>
 
-<aside id="meta">
-    <div>
-        {{ with .PrevInSection }}
-          <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
-        {{ end }}
-        {{ with .NextInSection }}
-          <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
-        {{ end }}
-    </div>
-</aside>
 
   {{ partial "footer.html" . }}
 
@@ -72,6 +65,6 @@
 
   <!-- Custom scripts for this template -->
   {{ $js := resources.Get "js/grayscale.js" | resources.Minify | resources.Fingerprint }}
-  <script src="{{ $js.Permalink }}"></script>
+  <script src="{{ $js.RelPermalink }}"></script>
 </body>
 </html>

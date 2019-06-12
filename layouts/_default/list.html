@@ -8,19 +8,19 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>{{ .Title }}</title>
+  <title>{{ .Title }} - Willamette Valley Bed and Breakfast</title>
 
   {{ partial "stylesheets.html" . }}
 
   <!-- Custom styles for this template -->
   {{ $style := resources.Get "scss/grayscale.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}">
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
 </head>
 
 <body id="page-top">
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <nav class="navbar navbar-shrink navbar-expand-lg navbar-light fixed-top" id="pageNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="/">WVBNB</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,10 +30,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/posts" data-target="#main">Posts</a>
+            <a class="nav-link js-scroll-trigger" href="/about" data-target="#main">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/reserve" data-target="#contact">Reserve Now</a>
+            <a class="nav-link js-scroll-trigger" href="/#reserve" data-target="#contact">Reserve Now</a>
           </li>
         </ul>
       </div>
@@ -46,17 +46,36 @@
     <div class="container">
       <div class="row">
         <div class="col-md-10 col-lg-8 mx-auto">
-          <h2 class="mb-1">{{ .Title }}</h2>
-          <p>{{ .Content }}</p>
-          {{ range .Pages.ByPublishDate.Reverse }}
-          <p>
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          </p>
-          <p id="date"> {{ .Date.Format "Jan 2, 2006" }} </p>
+          <h2 class="mb-1 text-center">{{ .Title }}</h2>
           <hr>
-          {{ end }}
         </div>
       </div>
+
+      {{ range .Pages.ByPublishDate.Reverse }}
+      <div class="row justify-content-center">
+
+      {{ $featured_image := .Params.featured_image }}
+      {{ if $featured_image }}
+      <div class="col-md-3">
+        <a href="{{ .RelPermalink }}">
+          <img class="img-thumbnail" src="{{ $featured_image }}" alt="{{ .Params.featured_image_alt_text }}">
+        </a>
+      </div>
+      {{ else }}
+      <div class="col-md-3 text-center">
+        <a class="btn btn-primary" href="{{ .RelPermalink }}">Read More</a>
+      </div>
+      {{ end }}
+
+      <div class="col-md-7 col-lg-5">
+        <p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+        <p class="date"> {{ .Date.Format "Jan 2, 2006" }} </p>
+        <p class="summary"> {{ .Summary }}</p>
+      </div>
+
+      </div>
+      {{ end }}
+
     </div>
   </section>
 
@@ -66,6 +85,6 @@
 
   <!-- Custom scripts for this template -->
   {{ $js := resources.Get "js/grayscale.js" | resources.Minify | resources.Fingerprint }}
-  <script src="{{ $js.Permalink }}"></script>
+  <script src="{{ $js.RelPermalink }}"></script>
 </body>
 </html>
