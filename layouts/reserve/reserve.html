@@ -20,7 +20,7 @@
 
   <!-- Custom styles for this template -->
   {{ $style := resources.Get "scss/grayscale.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}">
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
 </head>
 
@@ -208,11 +208,11 @@
 
   <!-- Custom scripts for this template -->
   {{ $js := resources.Get "js/grayscale.js" | resources.Minify | resources.Fingerprint }}
-  <script src="{{ $js.Permalink }}"></script>
+  <script src="{{ $js.RelPermalink }}"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   {{ $js := resources.Get "js/main.js" | resources.Minify | resources.Fingerprint }}
-  <script src="{{ $js.Permalink }}"></script>
+  <script src="{{ $js.RelPermalink }}"></script>
 
 </body>
 

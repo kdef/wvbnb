@@ -20,7 +20,7 @@
 
   <!-- Custom styles for this template -->
   {{ $style := resources.Get "scss/grayscale.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}">
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
 </head>
 
@@ -58,7 +58,7 @@
         <div class="col-md-10 col-lg-8 mx-auto">
           <h2 class="mb-1 text-center">{{ .Title }}</h2>
           <hr>
-          <p>{{ .Content }}</p>
+          <div class="content">{{ .Content }}</div>
         </div>
       </div>
     </div>
@@ -80,7 +80,7 @@
 
   <!-- Custom scripts for this template -->
   {{ $js := resources.Get "js/grayscale.js" | resources.Minify | resources.Fingerprint }}
-  <script src="{{ $js.Permalink }}"></script>
+  <script src="{{ $js.RelPermalink }}"></script>
 
 </body>
 

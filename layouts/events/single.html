@@ -8,19 +8,19 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>{{ .Title }}</title>
+  <title>{{ .Title }} - Willamette Valley Bed and Breakfast</title>
 
   {{ partial "stylesheets.html" . }}
 
   <!-- Custom styles for this template -->
   {{ $style := resources.Get "scss/grayscale.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}">
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
 </head>
 
 <body id="page-top">
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <nav class="navbar navbar-shrink navbar-expand-lg navbar-light fixed-top" id="pageNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="/">WVBNB</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,10 +30,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/posts" data-target="#main">Posts</a>
+            <a class="nav-link js-scroll-trigger" href="/events" data-target="#main">All Events</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/reserve" data-target="#contact">Reserve Now</a>
+            <a class="nav-link js-scroll-trigger" href="/#reserve" data-target="#contact">Reserve Now</a>
           </li>
         </ul>
       </div>
@@ -62,6 +62,6 @@
 
   <!-- Custom scripts for this template -->
   {{ $js := resources.Get "js/grayscale.js" | resources.Minify | resources.Fingerprint }}
-  <script src="{{ $js.Permalink }}"></script>
+  <script src="{{ $js.RelPermalink }}"></script>
 </body>
 </html>
