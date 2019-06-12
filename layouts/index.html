@@ -205,7 +205,7 @@
       </div>
     </div>
     <div class="row">
-      {{ $n_posts := $.Param "recent_posts_number" | default 2 }}
+      {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
       {{ range first $n_posts (where .Site.RegularPages "Section" "posts") }}
       <div class="col-md-4 col-lg-4">
         {{ partial "card-with-image.html" . }}

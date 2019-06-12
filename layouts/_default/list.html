@@ -68,9 +68,10 @@
       {{ end }}
 
       <div class="col-md-7 col-lg-5">
-        <p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+        <h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
         <p class="date"> {{ .Date.Format "Jan 2, 2006" }} </p>
         <p class="summary"> {{ .Summary }}</p>
+        <a href="{{ .RelPermalink }}">Continue reading</a>
       </div>
 
       </div>

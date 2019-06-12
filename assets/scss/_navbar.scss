@@ -1,5 +1,21 @@
 #pageNav {
   background-color: $white;
+  .navbar-brand {
+    color: $black;
+  }
+  .nav-link {
+    color: $black;
+    &:hover {
+      color: $primary;
+    }
+    &:active {
+      color: darken($primary, 15%);
+    }
+    &.active {
+      color: $primary;
+      outline: none;
+    }
+  }
 }
 
 #mainNav {
