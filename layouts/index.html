@@ -15,7 +15,6 @@
   <!-- Custom styles for this template -->
   {{ $style := resources.Get "scss/grayscale.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 </head>
 

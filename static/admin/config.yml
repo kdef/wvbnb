@@ -2,6 +2,7 @@ backend:
   name: github
   repo: kdef/wvbnb
   branch: netlify-cms
+  base_url: http://ec2-52-35-107-98.us-west-2.compute.amazonaws.com:3000
 publish_mode: editorial_workflow
 media_folder: "static/img/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/img/uploads" # The src attribute for uploaded media will begin with /images/uploads
