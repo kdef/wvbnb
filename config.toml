@@ -12,3 +12,36 @@ enableRobotsTXT = true
   recent_events_months = ["September", "June"]
 
   background_color_class = "bg-black"
+
+[menu]
+  [[menu.about]]
+    name = "About"
+    url = "#about"
+
+  [[menu.about]]
+    name = "Location"
+    url = "#location"
+
+  [[menu.about]]
+    name = "Reserve Now"
+    url = "/#reserve"
+
+  [[menu.index]]
+    name = "About"
+    url = "#about"
+
+  [[menu.index]]
+    name = "Reserve"
+    url = "#reserve"
+
+  [[menu.index]]
+    name = "Information"
+    url = "#info"
+
+  [[menu.index]]
+    name = "News"
+    url = "#news"
+
+  [[menu.index]]
+    name = "Contact Us"
+    url = "#contact"
