@@ -29,22 +29,27 @@ enableRobotsTXT = true
   [[menu.index]]
     name = "About"
     url = "#about"
+    weight = 1
 
   [[menu.index]]
     name = "Reserve"
     url = "#reserve"
+    weight = 2
 
   [[menu.index]]
     name = "Information"
     url = "#info"
+    weight = 3
 
   [[menu.index]]
     name = "News"
     url = "#news"
+    weight = 4
 
   [[menu.index]]
     name = "Contact Us"
     url = "#contact"
+    weight = 5
 
   [[menu.page]]
     name = "About"
