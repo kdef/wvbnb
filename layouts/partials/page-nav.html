@@ -1,0 +1,20 @@
+{{ $logo := "WVBNB" }}
+<!-- Navigation -->
+<nav class="navbar navbar-shrink navbar-expand-lg navbar-light" id="pageNav">
+  <div class="container">
+    <a class="navbar-brand" href="{{ "/" | relURL }}">{{ $logo }}</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        {{ range . }}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</nav>
