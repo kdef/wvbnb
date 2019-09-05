@@ -45,3 +45,27 @@ enableRobotsTXT = true
   [[menu.index]]
     name = "Contact Us"
     url = "#contact"
+
+  [[menu.page]]
+    name = "About"
+    url = "/about"
+
+  [[menu.page]]
+    name = "Reserve Now"
+    url = "/#reserve"
+
+  [[menu.post]]
+    name = "All Posts"
+    url = "/posts"
+
+  [[menu.post]]
+    name = "Reserve Now"
+    url = "/#reserve"
+
+  [[menu.event]]
+    name = "All Events"
+    url = "/events"
+
+  [[menu.event]]
+    name = "Reserve Now"
+    url = "/#reserve"
