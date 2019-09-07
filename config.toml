@@ -12,3 +12,65 @@ enableRobotsTXT = true
   recent_events_months = ["September", "June"]
 
   background_color_class = "bg-black"
+
+[menu]
+  [[menu.about]]
+    name = "About"
+    url = "#about"
+
+  [[menu.about]]
+    name = "Location"
+    url = "#location"
+
+  [[menu.about]]
+    name = "Reserve Now"
+    url = "/#reserve"
+
+  [[menu.index]]
+    name = "About"
+    url = "#about"
+    weight = 1
+
+  [[menu.index]]
+    name = "Reserve"
+    url = "#reserve"
+    weight = 2
+
+  [[menu.index]]
+    name = "Information"
+    url = "#info"
+    weight = 3
+
+  [[menu.index]]
+    name = "News"
+    url = "#news"
+    weight = 4
+
+  [[menu.index]]
+    name = "Contact Us"
+    url = "#contact"
+    weight = 5
+
+  [[menu.page]]
+    name = "About"
+    url = "/about"
+
+  [[menu.page]]
+    name = "Reserve Now"
+    url = "/#reserve"
+
+  [[menu.post]]
+    name = "All Posts"
+    url = "/posts"
+
+  [[menu.post]]
+    name = "Reserve Now"
+    url = "/#reserve"
+
+  [[menu.event]]
+    name = "All Events"
+    url = "/events"
+
+  [[menu.event]]
+    name = "Reserve Now"
+    url = "/#reserve"

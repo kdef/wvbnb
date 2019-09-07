@@ -20,26 +20,7 @@
 
 <body id="page-top">
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-shrink navbar-expand-lg navbar-light fixed-top" id="pageNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="{{ "/" | relURL }}">WVBNB</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="{{ "/about" | relURL }}">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="{{ "/#reserve" | relURL }}" data-target="#contact">Reserve Now</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  {{ partial "page-nav.html" .Site.Menus.page }}
 
   {{ partial "a-page-header.html" . }}
 
