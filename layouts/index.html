@@ -1,213 +1,190 @@
-<!DOCTYPE html>
-<html lang="en">
+{{ define "main" }}
 
-<head>
+{{ partial "change-on-scroll-nav.html" .Site.Menus.index }}
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+<!-- Header -->
+<header class="masthead">
+  <div class="container d-flex h-100 align-items-center">
+    <div class="mx-auto text-center">
+      <h2 id="slogan" class="text-white mx-auto mt-2 mb-5">{{ .Params.slogan }}</h2>
+      <a href="#reserve" class="btn btn-primary js-scroll-trigger">Reserve Now</a>
+    </div>
+  </div>
+</header>
 
-  <title>Willamette Valley Bed and Breakfast - Newberg, Oregon</title>
-
-  {{ partial "stylesheets.html" . }}
-
-  <!-- Custom styles for this template -->
-  {{ $style := resources.Get "scss/grayscale.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-
-</head>
-
-<body id="page-top">
-
-  {{ partial "change-on-scroll-nav.html" .Site.Menus.index }}
-
-  <!-- Header -->
-  <header class="masthead">
-    <div class="container d-flex h-100 align-items-center">
-      <div class="mx-auto text-center">
-        <h2 id="slogan" class="text-white mx-auto mt-2 mb-5">{{ .Params.slogan }}</h2>
-        <a href="#reserve" class="btn btn-primary js-scroll-trigger">Reserve Now</a>
+<!-- About Section -->
+<section id="about" class="about-section text-center bg-black">
+  <div class="container">
+    <div class="row">
+      <div id="about-content" class="col-lg-8 mx-auto mb-5">
+        <h2 id="about-title" class="text-white mb-4">{{ .Params.about_title }}</h2>
+        <p id="about-text" class="text-white-50">{{ .Params.about_text }}</p>
+        <a href="/about"><i class="fas fa-info-circle text-primary"></i> Learn more about us</a>
+        <a href="/about#location" class="mx-2"><i class="fas fa-map-marker-alt text-primary"></i> Where to find us</a>
+        <a href="/about#breakfast"><i class="fas fa-utensils text-primary"></i> Curious about breakfast?</a>
       </div>
     </div>
-  </header>
+  </div>
+</section>
 
-  <!-- About Section -->
-  <section id="about" class="about-section text-center bg-black">
-    <div class="container">
-      <div class="row">
-        <div id="about-content" class="col-lg-8 mx-auto mb-5">
-          <h2 id="about-title" class="text-white mb-4">{{ .Params.about_title }}</h2>
-          <p id="about-text" class="text-white-50">{{ .Params.about_text }}</p>
-          <a href="/about"><i class="fas fa-info-circle text-primary"></i> Learn more about us</a>
-          <a href="/about#location" class="mx-2"><i class="fas fa-map-marker-alt text-primary"></i> Where to find us</a>
-          <a href="/about#breakfast"><i class="fas fa-utensils text-primary"></i> Curious about breakfast?</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="reserve" class="reserve-section text-center bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-lg-8 mx-auto text-center">
-
-          <h2 class="mb-1">Reservations</h2>
-          <p class="mb-4">{{ .Params.reserve_text }}</p>
-
-          <form action="#" method="POST">
-            <div class="row row-sm-offset">
-              <div class="col-md-4 multi-horizontal" data-for="name">
-                <div class="form-group">
-                  <label class="form-control-label display-7" for="name-form1-73">First Name</label>
-                  <input disabled type="text" class="form-control" name="name" data-form-field="Name" required="" id="name-form1-73">
-                </div>
-              </div>
-              <div class="col-md-4 multi-horizontal" data-for="email">
-                <div class="form-group">
-                  <label class="form-control-label display-7" for="email-form1-73">Last Name</label>
-                  <input disabled type="text" class="form-control" name="email" data-form-field="Last Name" required="" id="email-form1-73">
-                </div>
-              </div>
-              <div class="col-md-4 multi-horizontal" data-for="guestnum">
-                <div class="form-group">
-                  <label class="form-control-label display-7" for="guestnum">Number of Guests</label>
-                  <select disabled class="form-control" name="guestnum" data-form-field="Number of Guests" required="" id="guestnum">
-                    <option value="2" selected="selected">2</option>
-                    <option value="1">1</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-4 multi-horizontal" data-for="checkin">
-              <div class="form-group">
-                <label >Check In</label>
-                <input disabled type="date" name="checkin" max="3000-12-31"
-                       min="1000-01-01" class="form-control" id="checkin">
-              </div>
-              </div>
-              <div class="col-md-4 multi-horizontal" data-for="checkout">
-              <div class="form-group">
-                <label >Check Out</label>
-                <input disabled type="date" name="checkout" min="1000-01-01"
-                       max="3000-12-31" class="form-control" id="checkout">
-              </div>
-              </div>
-              <div class="col-md-4 multi-horizontal" data-for="available">
-              <div class="form-group">
-                <button disabled style="background-color:grey" class="btn btn-primary" name="available" id="available">Coming Soon</button>
-              </div>
-              </div>
-            </div>
-          </form>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="info" class="projects-section bg-light">
-    <div class="container">
-
-      <!-- Featured Project Row -->
-      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/region.jpg" alt="">
-        </div>
-        <div class="col-xl-4 col-lg-5">
-          <div class="featured-text text-center text-lg-left">
-            <h4>{{ .Params.regional_title }}</h4>
-            <p class="text-black-50 mb-0">{{ .Params.regional_text }}</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project One Row -->
-      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="img/suite.jpg" alt="">
-        </div>
-        <div class="col-lg-6">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">{{ .Params.suites_title }}</h4>
-                <p class="mb-0 text-white-50">{{ .Params.suites_text }}</p>
-                <hr class="d-none d-lg-block mb-0 ml-0">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project Two Row -->
-      <div class="row justify-content-center no-gutters">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="img/breakfast.jpg" alt="">
-        </div>
-        <div class="col-lg-6 order-lg-first">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-right">
-                <h4 class="text-white">{{ .Params.breakfast_title }}</h4>
-                <p class="mb-0 text-white-50">{{ .Params.breakfast_text }}</p>
-                <hr class="d-none d-lg-block mb-0 mr-0">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="news" class="news-section bg-light">
+<section id="reserve" class="reserve-section text-center bg-light">
   <div class="container">
     <div class="row">
       <div class="col-md-10 col-lg-8 mx-auto text-center">
-        <h2 class="mb-1">News</h2>
-        <p class="mb-4">{{ .Params.news_text | markdownify }}</p>
+
+        <h2 class="mb-1">Reservations</h2>
+        <p class="mb-4">{{ .Params.reserve_text }}</p>
+
+        <form action="#" method="POST">
+          <div class="row row-sm-offset">
+            <div class="col-md-4 multi-horizontal" data-for="name">
+              <div class="form-group">
+                <label class="form-control-label display-7" for="name-form1-73">First Name</label>
+                <input disabled type="text" class="form-control" name="name" data-form-field="Name" required="" id="name-form1-73">
+              </div>
+            </div>
+            <div class="col-md-4 multi-horizontal" data-for="email">
+              <div class="form-group">
+                <label class="form-control-label display-7" for="email-form1-73">Last Name</label>
+                <input disabled type="text" class="form-control" name="email" data-form-field="Last Name" required="" id="email-form1-73">
+              </div>
+            </div>
+            <div class="col-md-4 multi-horizontal" data-for="guestnum">
+              <div class="form-group">
+                <label class="form-control-label display-7" for="guestnum">Number of Guests</label>
+                <select disabled class="form-control" name="guestnum" data-form-field="Number of Guests" required="" id="guestnum">
+                  <option value="2" selected="selected">2</option>
+                  <option value="1">1</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 multi-horizontal" data-for="checkin">
+            <div class="form-group">
+              <label >Check In</label>
+              <input disabled type="date" name="checkin" max="3000-12-31"
+                     min="1000-01-01" class="form-control" id="checkin">
+            </div>
+            </div>
+            <div class="col-md-4 multi-horizontal" data-for="checkout">
+            <div class="form-group">
+              <label >Check Out</label>
+              <input disabled type="date" name="checkout" min="1000-01-01"
+                     max="3000-12-31" class="form-control" id="checkout">
+            </div>
+            </div>
+            <div class="col-md-4 multi-horizontal" data-for="available">
+            <div class="form-group">
+              <button disabled style="background-color:grey" class="btn btn-primary" name="available" id="available">Coming Soon</button>
+            </div>
+            </div>
+          </div>
+        </form>
+
       </div>
-    </div>
-    <div class="row">
-      {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
-      {{ range first $n_posts (where .Site.RegularPages "Section" "posts") }}
-      <div class="col-md-4 col-lg-4">
-        {{ partial "card-with-image.html" . }}
-      </div>
-      {{ end }}
     </div>
   </div>
-  </section>
+</section>
 
-  <!-- Signup Section -->
-  <section id="signup" class="signup-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-lg-8 mx-auto text-center">
+<!-- Projects Section -->
+<section id="info" class="projects-section bg-light">
+  <div class="container">
 
-          <h2 class="text-white mb-5">Subscribe to our newsletter</h2>
-
-          <form class="form-inline d-flex" action="https://formspree.io/formspree@willamettevalleybandb.com" method="POST">
-            <input name="email" type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
-          </form>
-
+    <!-- Featured Project Row -->
+    <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+      <div class="col-xl-8 col-lg-7">
+        <img class="img-fluid mb-3 mb-lg-0" src="img/region.jpg" alt="">
+      </div>
+      <div class="col-xl-4 col-lg-5">
+        <div class="featured-text text-center text-lg-left">
+          <h4>{{ .Params.regional_title }}</h4>
+          <p class="text-black-50 mb-0">{{ .Params.regional_text }}</p>
         </div>
       </div>
     </div>
-  </section>
 
-  {{ partial "footer.html" . }}
+    <!-- Project One Row -->
+    <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+      <div class="col-lg-6">
+        <img class="img-fluid" src="img/suite.jpg" alt="">
+      </div>
+      <div class="col-lg-6">
+        <div class="bg-black text-center h-100 project">
+          <div class="d-flex h-100">
+            <div class="project-text w-100 my-auto text-center text-lg-left">
+              <h4 class="text-white">{{ .Params.suites_title }}</h4>
+              <p class="mb-0 text-white-50">{{ .Params.suites_text }}</p>
+              <hr class="d-none d-lg-block mb-0 ml-0">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  {{ partial "scripts.html" . }}
+    <!-- Project Two Row -->
+    <div class="row justify-content-center no-gutters">
+      <div class="col-lg-6">
+        <img class="img-fluid" src="img/breakfast.jpg" alt="">
+      </div>
+      <div class="col-lg-6 order-lg-first">
+        <div class="bg-black text-center h-100 project">
+          <div class="d-flex h-100">
+            <div class="project-text w-100 my-auto text-center text-lg-right">
+              <h4 class="text-white">{{ .Params.breakfast_title }}</h4>
+              <p class="mb-0 text-white-50">{{ .Params.breakfast_text }}</p>
+              <hr class="d-none d-lg-block mb-0 mr-0">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <!-- Custom scripts for this template -->
-  {{ $js := resources.Get "js/grayscale.js" | resources.Minify | resources.Fingerprint }}
-  <script src="{{ $js.RelPermalink }}"></script>
-</body>
+  </div>
+</section>
 
-</html>
+<section id="news" class="news-section bg-light">
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-lg-8 mx-auto text-center">
+      <h2 class="mb-1">News</h2>
+      <p class="mb-4">{{ .Params.news_text | markdownify }}</p>
+    </div>
+  </div>
+  <div class="row">
+    {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
+    {{ range first $n_posts (where .Site.RegularPages "Section" "posts") }}
+    <div class="col-md-4 col-lg-4">
+      {{ partial "card-with-image.html" . }}
+    </div>
+    {{ end }}
+  </div>
+</div>
+</section>
+
+<!-- Signup Section -->
+<section id="signup" class="signup-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+        <h2 class="text-white mb-5">Subscribe to our newsletter</h2>
+
+        <form class="form-inline d-flex" action="https://formspree.io/formspree@willamettevalleybandb.com" method="POST">
+          <input name="email" type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
+          <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ define "scripts" }}
+{{ partial "scripts.html" . }}
+
+<!-- Custom scripts for this template -->
+{{ $js := resources.Get "js/grayscale.js" | resources.Minify | resources.Fingerprint }}
+<script src="{{ $js.RelPermalink }}"></script>
+{{ end }}
