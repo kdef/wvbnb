@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="{{ .Site.Params.description }}">
+  <meta name="description" {{ printf "content=%q" (.Params.description | default .Site.Params.description) | safeHTMLAttr }}>
   {{/* For Production make sure to add `HUGO_ENV="production"` before build command */}}
   {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
     <meta name="robots" content="index, follow">
