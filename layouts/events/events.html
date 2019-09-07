@@ -1,49 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+{{ define "main" }}
 
-<head>
+{{ partial "page-nav.html" .Site.Menus.page }}
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+{{ partial "a-page-header.html" . }}
 
-  <title>{{ .Title }}</title>
-
-  {{ partial "stylesheets.html" . }}
-
-  <!-- Custom styles for this template -->
-  {{ $style := resources.Get "scss/grayscale.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-
-</head>
-
-<body id="page-top">
-
-  {{ partial "page-nav.html" .Site.Menus.page }}
-
-  {{ partial "a-page-header.html" . }}
-
-  <section id="about" class="reserve-section bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-lg-8 mx-auto">
-          <h2 class="mb-1 text-center">{{ .Title }}</h2>
-          <hr>
-          <p>{{ .Content }}</p>
-        </div>
+<section id="about" class="reserve-section bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-lg-8 mx-auto">
+        <h2 class="mb-1 text-center">{{ .Title }}</h2>
+        <hr>
+        <p>{{ .Content }}</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  {{ partial "footer.html" . }}
-
-  {{ partial "scripts.html" . }}
-
-  <!-- Custom scripts for this template -->
-  {{ $js := resources.Get "js/grayscale.js" | resources.Minify | resources.Fingerprint }}
-  <script src="{{ $js.RelPermalink }}"></script>
-
-</body>
-
-</html>
+{{ end }}
