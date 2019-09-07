@@ -15,8 +15,6 @@
   <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
 
   {{ block "stylesheets" .}}{{ partial "stylesheets.html" . }}{{ end }}
-  {{ $style := resources.Get "scss/grayscale.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 </head>
 
 <body id="page-top">
