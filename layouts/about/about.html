@@ -1,59 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
+{{ define "main" }}
 
-<head>
+{{ partial "change-on-scroll-nav.html" .Site.Menus.about }}
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+{{ partial "a-page-header.html" . }}
 
-  <title>{{ .Title }}</title>
-
-  {{ partial "stylesheets.html" . }}
-
-  <!-- Custom styles for this template -->
-  {{ $style := resources.Get "scss/grayscale.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-
-</head>
-
-<body id="page-top">
-
-  {{ partial "change-on-scroll-nav.html" .Site.Menus.about }}
-
-  {{ partial "a-page-header.html" . }}
-
-  <section id="about" class="reserve-section bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-lg-8 mx-auto">
-          <h2 class="mb-1 text-center">{{ .Title }}</h2>
-          <hr>
-          <div class="content">{{ .Content }}</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="location" class="bg-light" style="padding: 0 0 5em 0">
+<section id="about" class="reserve-section bg-light">
   <div class="container">
     <div class="row">
-      <div class="col-md-10 col-lg-8 mx-auto text-center">
-      {{ partial "location.html" . }}
+      <div class="col-md-10 col-lg-8 mx-auto">
+        <h2 class="mb-1 text-center">{{ .Title }}</h2>
+        <hr>
+        <div class="content">{{ .Content }}</div>
       </div>
     </div>
   </div>
-  </section>
+</section>
 
-  {{ partial "footer.html" . }}
+<section id="location" class="bg-light" style="padding: 0 0 5em 0">
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-lg-8 mx-auto text-center">
+    {{ partial "location.html" . }}
+    </div>
+  </div>
+</div>
+</section>
 
-  {{ partial "scripts.html" . }}
-
-  <!-- Custom scripts for this template -->
-  {{ $js := resources.Get "js/grayscale.js" | resources.Minify | resources.Fingerprint }}
-  <script src="{{ $js.RelPermalink }}"></script>
-
-</body>
-
-</html>
+{{ end }}
