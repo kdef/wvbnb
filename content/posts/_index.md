@@ -1,6 +1,6 @@
 ---
 title: Blog
-description: Willamette Valley Bed and Breakfast
+description: Blog posts by Willamette Valley Bed and Breakfast
 featured_image: 
 featured_image_alt_text: 
 ---
