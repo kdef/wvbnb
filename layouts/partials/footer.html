@@ -1,51 +1,60 @@
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section bg-black">
-    <div id="contact-content" class="container">
+<!-- Contact Section -->
+<section id="contact" class="contact-section bg-black">
+  <div id="contact-content" class="container">
 
-      <div class="row">
+    <div class="row">
 
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Address</h4>
-              <hr class="my-4">
-              <div class="small text-black-50">23535 NE Old Yamhill Road, Newberg, Oregon 97132</div>
-            </div>
+      <div class="col-md-4 mb-3 mb-md-0">
+        <div class="card py-4 h-100">
+          <div class="card-body text-center">
+            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+            <h4 class="text-uppercase m-0">Address</h4>
+            <hr class="my-4">
+            <div class="small text-black-50">23535 NE Old Yamhill Road, Newberg, Oregon 97132</div>
           </div>
         </div>
+      </div>
 
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-envelope text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Email</h4>
-              <hr class="my-4">
-              <div class="small text-black-50">
-                <a href="mailto:info@willamettevalleybandb.com">info@willamettevalleybandb.com</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-mobile-alt text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Phone</h4>
-              <hr class="my-4">
-              <div class="small text-black-50">(425) 495-1181</div>
+      <div class="col-md-4 mb-3 mb-md-0">
+        <div class="card py-4 h-100">
+          <div class="card-body text-center">
+            <i class="fas fa-envelope text-primary mb-2"></i>
+            <h4 class="text-uppercase m-0">Email</h4>
+            <hr class="my-4">
+            <div class="small text-black-50">
+              <a href="mailto:info@willamettevalleybandb.com">info@willamettevalleybandb.com</a>
             </div>
           </div>
         </div>
       </div>
 
+      <div class="col-md-4 mb-3 mb-md-0">
+        <div class="card py-4 h-100">
+          <div class="card-body text-center">
+            <i class="fas fa-mobile-alt text-primary mb-2"></i>
+            <h4 class="text-uppercase m-0">Phone</h4>
+            <hr class="my-4">
+            <div class="small text-black-50">(425) 495-1181</div>
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="bg-black small text-center text-white-50">
-    <div class="container">
-      Copyright &copy; Willamette Valley Bed and Breakfast 2019
-    </div>
-  </footer>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-black small text-center text-white-50">
+
+  <ul class="nav justify-content-center">
+  {{ range .Site.Menus.footer }}
+  <li class="nav-item">
+    <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+  </li>
+  {{ end }}
+  </ul>
+
+  <div class="container">
+    Copyright &copy; Willamette Valley Bed and Breakfast 2019
+  </div>
+</footer>
