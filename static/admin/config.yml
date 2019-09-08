@@ -8,9 +8,12 @@ public_folder: "/img/uploads" # The src attribute for uploaded media will begin 
 
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
+    label: "Blog Posts" # Used in the UI
     folder: "content/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
+    # this excludes the file contents/posts/_index.md because it has a field "description"
+    # see this issue: https://github.com/netlify/netlify-cms/issues/1000
+    filter: {field: "description"}
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
@@ -21,6 +24,8 @@ collections:
     label: "Events"
     folder: "content/events"
     create: true
+    # see this issue: https://github.com/netlify/netlify-cms/issues/1000
+    filter: {field: "description"}
     fields:
       - {label: "Title", name: "title", wdiget: "string"}
       - {label: "Event Date", name: "date", wdiget: "datetime"}

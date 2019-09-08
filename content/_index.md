@@ -21,4 +21,4 @@ breakfast_text: "Breakfast is served each morning at 9 A.M. in the Great Room.  
 
 news_text: "See our list of [upcoming local events](/events) and other [updates from us](/posts)."
 ---
-Content
+This field is not used.
