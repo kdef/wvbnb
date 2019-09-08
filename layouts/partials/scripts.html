@@ -1,5 +1,5 @@
-<!-- Bootstrap core JavaScript -->
+{{ $js := resources.Get "js/grayscale.js" | resources.Minify | resources.Fingerprint }}
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
 <script src="{{ "/vendor/bootstrap/js/bootstrap.bundle.min.js" | relURL }}"></script>
-<!-- Plugin JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="{{ $js.RelPermalink }}"></script>

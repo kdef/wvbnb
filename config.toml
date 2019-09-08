@@ -6,6 +6,7 @@ Paginate = 3
 enableRobotsTXT = true
 
 [params]
+  description = "A wine country bed and breakfast in Newberg, Oregon."
   default_featured_image = "/img/bg-masthead.md"
 
   recent_events_per_month = 10

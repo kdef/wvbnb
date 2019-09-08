@@ -1,6 +1,6 @@
 ---
 title: Events
-description: Willamette Valley Bed and Breakfast
+description: Local events recommended by Willamette Valley Bed and Breakfast
 featured_image: 
 featured_image_alt_text: 
 ---

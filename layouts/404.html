@@ -1,64 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+{{ define "main" }}
 
-<head>
+{{ partial "page-nav.html" .Site.Menus.page }}
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Willamette Valley Bed and Breakfast - Newberg, Oregon</title>
-
-  {{ partial "stylesheets.html" . }}
-
-  <!-- Custom styles for this template -->
-  {{ $style := resources.Get "scss/grayscale.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-
-</head>
-
-<body id="page-top">
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light navbar-shrink fixed-top" id="reserveNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="{{ "/" | relURL }}">WVBNB</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="{{ "/about" | relURL }}">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-        </ul>
+<section id="about" class="reserve-section bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-lg-8 mx-auto">
+        <h2 class="mb-1 text-center">Sorry - Page Not Found</h2>
+        <hr>
+        <div class="content">This page does not exist. Try starting from the homepage or contact us if you can't find what you're looking for.</div>
       </div>
     </div>
-  </nav>
+  </div>
+</section>
 
-  <section id="about" class="reserve-section bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-lg-8 mx-auto">
-          <h2 class="mb-1 text-center">Sorry - Page Not Found</h2>
-          <hr>
-          <div class="content">This page does not exist. Try starting from the homepage or contact us if you can't find what you're looking for.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  {{ partial "footer.html" . }}
-
-  {{ partial "scripts.html" . }}
-
-  <!-- Custom scripts for this template -->
-  {{ $js := resources.Get "js/grayscale.js" | resources.Minify | resources.Fingerprint }}
-  <script src="{{ $js.RelPermalink }}"></script>
-</body>
-
-</html>
+{{ end }}
