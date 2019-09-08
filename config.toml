@@ -75,3 +75,19 @@ enableRobotsTXT = true
   [[menu.event]]
     name = "Reserve Now"
     url = "/#reserve"
+
+  [[menu.footer]]
+    name = "About"
+    url = "/about"
+
+  [[menu.footer]]
+    name = "Blog"
+    url = "/posts"
+
+  [[menu.footer]]
+    name = "Events"
+    url = "/events"
+
+  [[menu.footer]]
+    name = "Reservations"
+    url = "/#reserve"

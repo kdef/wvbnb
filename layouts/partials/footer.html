@@ -45,6 +45,15 @@
 
 <!-- Footer -->
 <footer class="bg-black small text-center text-white-50">
+
+  <ul class="nav justify-content-center">
+  {{ range .Site.Menus.footer }}
+  <li class="nav-item">
+    <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+  </li>
+  {{ end }}
+  </ul>
+
   <div class="container">
     Copyright &copy; Willamette Valley Bed and Breakfast 2019
   </div>
