@@ -1,16 +1,19 @@
 backend:
   name: github
   repo: kdef/wvbnb
-  branch: netlify-cms
+  branch: master
 publish_mode: editorial_workflow
 media_folder: "static/img/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/img/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
+    label: "Blog Posts" # Used in the UI
     folder: "content/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
+    # this excludes the file contents/posts/_index.md because it has a field "description"
+    # see this issue: https://github.com/netlify/netlify-cms/issues/1000
+    filter: {field: "description"}
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
@@ -21,6 +24,8 @@ collections:
     label: "Events"
     folder: "content/events"
     create: true
+    # see this issue: https://github.com/netlify/netlify-cms/issues/1000
+    filter: {field: "description"}
     fields:
       - {label: "Title", name: "title", wdiget: "string"}
       - {label: "Event Date", name: "date", wdiget: "datetime"}
@@ -29,24 +34,51 @@ collections:
       - {label: "Featured Image Alt Text", name: "featured_image_alt_text", wdiget: "string"}
       - {label: "Description", name: "body", wdiget: "markdown"}
   - name: "pages"
-    label: "Pages"
+    label: "All Pages"
     files:
+      - file: "content/_index.md"
+        name: "index"
+        label: "Home"
+        fields:
+          - {label: "Slogan", name: "slogan", widget: "string"}
+          - {label: "Featured Image", name: "featured_image", widget: "image"}
+          - {label: "Featured Image Alt Text", name: "featured_image_alt_text", widget: "string"}
+          - {label: "About Title", name: "about_title", widget: "string"}
+          - {label: "About Text", name: "about_text", widget: "text"}
+          - {label: "About Image", name: "about_image", widget: "image"}
+          - {label: "Reserve Text", name: "reserve_text", widget: "text"}
+          - {label: "Regional Title", name: "regional_title", widget: "string"}
+          - {label: "Regional Text", name: "regional_text", widget: "text"}
+          - {label: "Suites Title", name: "suites_title", widget: "string"}
+          - {label: "Suites Text", name: "suites_text", widget: "text"}
+          - {label: "Breakfast Title", name: "breakfast_title", widget: "string"}
+          - {label: "Breakfast Text", name: "breakfast_text", widget: "text"}
+          - {label: "News Text", name: "news_text", widget: "markdown"}
+          - {label: "Body", name: "body", widget: "markdown"}
       - file: "content/about/_index.md"
         name: "about"
         label: "About"
-        fields: # The fields for each document, usually in front matter
+        fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "string"}
           - {label: "Featured Image", name: "featured_image", widget: "image"}
           - {label: "Featured Image Alt Text", name: "featured_image_alt_text", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - file: "content/reserve/_index.md"
-        name: "reserve"
-        label: "Reserve"
-        fields: # The fields for each document, usually in front matter
+      - file: "content/posts/_index.md"
+        name: "posts"
+        label: "Blog"
+        fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "string"}
           - {label: "Featured Image", name: "featured_image", widget: "image"}
           - {label: "Featured Image Alt Text", name: "featured_image_alt_text", widget: "string"}
-          - {label: "Draft", name: "draft", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "content/events/_index.md"
+        name: "events"
+        label: "Events"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "string"}
+          - {label: "Featured Image", name: "featured_image", widget: "image"}
+          - {label: "Featured Image Alt Text", name: "featured_image_alt_text", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
