@@ -91,3 +91,5 @@ enableRobotsTXT = true
   [[menu.footer]]
     name = "Reservations"
     url = "/#reserve"
+
+[taxonomies]
