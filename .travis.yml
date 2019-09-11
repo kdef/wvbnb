@@ -1,0 +1,21 @@
+if: tag IS present
+
+language: minimal
+
+before_install:
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.58.1/hugo_0.58.1_Linux-64bit.deb
+  - sudo dpkg -i hugo_0.58.1_Linux-64bit.deb
+
+env:
+  - HUGO_ENV=production
+
+script: hugo -F -d production --baseURL https://kdef.github.com/wvbnb/
+
+deploy:
+  - provider: pages
+    edge: true
+    github_token: $GITHUB_TOKEN
+    target_branch: gh-pages
+    local_dir: production
+    on:
+      tags: true
