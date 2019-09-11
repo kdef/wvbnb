@@ -1,4 +1,5 @@
-{{ $style := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+{{ $scss := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "style.main.scss" . }}
+{{ $style := $scss | resources.ToCSS | resources.Minify | resources.Fingerprint }}
 <link href="{{ "/vendor/bootstrap/css/bootstrap.min.css" | relURL }}" rel="stylesheet">
 <!-- Custom fonts -->
 <link href="{{ "/vendor/fontawesome-free/css/all.min.css" | relURL }}" rel="stylesheet">

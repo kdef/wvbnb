@@ -1,4 +1,4 @@
-{{ $featured_image := .Params.featured_image }}
+{{ $featured_image := .Params.featured_image | relURL }}
 <div class="card">
   {{ if $featured_image }}
     <img class="card-img-top" src="{{ $featured_image }}" alt="{{ .Params.featured_image_alt_text }}">

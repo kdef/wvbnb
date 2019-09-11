@@ -1,4 +1,4 @@
-{{ $featured_image := .Params.featured_image }}
+{{ $featured_image := .Params.featured_image | relURL }}
 {{ if $featured_image }}
   <header class="pagehead" style="background-image: url('{{ $featured_image }}')" >
   </header>
