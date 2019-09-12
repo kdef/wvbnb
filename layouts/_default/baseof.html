@@ -5,11 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" {{ printf "content=%q" (.Params.description | default .Site.Params.description) | safeHTMLAttr }}>
-  {{/* For Production make sure to add `HUGO_ENV="production"` before build command */}}
+  {{/* For production make sure to set `HUGO_ENV="production"` env var */}}
   {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
-    <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow">
   {{ else }}
-    <meta name="robots" content="noindex, nofollow">
+  <meta name="robots" content="noindex, nofollow">
   {{ end }}
 
   <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
