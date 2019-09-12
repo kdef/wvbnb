@@ -1,5 +1,5 @@
-{{ $featured_image := .Params.featured_image | relURL }}
+{{ $featured_image := .Params.featured_image }}
 {{ if $featured_image }}
-  <header class="pagehead" style="background-image: url('{{ $featured_image }}')" >
+  <header class="pagehead" style="background-image: url('{{ $featured_image | relURL }}')" >
   </header>
 {{ end }}

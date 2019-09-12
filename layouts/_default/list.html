@@ -16,11 +16,11 @@
     {{ range .Pages.ByPublishDate.Reverse }}
     <div class="row justify-content-center">
 
-    {{ $featured_image := .Params.featured_image | relURL }}
+    {{ $featured_image := .Params.featured_image }}
     {{ if $featured_image }}
     <div class="col-md-3">
       <a href="{{ .RelPermalink }}">
-        <img class="img-thumbnail" src="{{ $featured_image }}" alt="{{ .Params.featured_image_alt_text }}">
+        <img class="img-thumbnail" src="{{ $featured_image | relURL }}" alt="{{ .Params.featured_image_alt_text }}">
       </a>
     </div>
     {{ else }}
