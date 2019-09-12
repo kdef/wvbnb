@@ -3,26 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://kdef.github.io/wvbnb/</loc>
+    <loc>https://kdef.github.com/wvbnb/</loc>
     <lastmod>2019-06-11T23:25:05-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kdef.github.io/wvbnb/posts/</loc>
+    <loc>https://kdef.github.com/wvbnb/posts/</loc>
     <lastmod>2019-06-11T23:25:05-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kdef.github.io/wvbnb/posts/building-a-retreat-in-willamette-valley/</loc>
+    <loc>https://kdef.github.com/wvbnb/posts/building-a-retreat-in-willamette-valley/</loc>
     <lastmod>2019-06-11T23:25:05-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kdef.github.io/wvbnb/about/</loc>
+    <loc>https://kdef.github.com/wvbnb/about/</loc>
   </url>
   
   <url>
-    <loc>https://kdef.github.io/wvbnb/events/</loc>
+    <loc>https://kdef.github.com/wvbnb/events/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kdef.github.com/wvbnb/reserve/</loc>
   </url>
   
 </urlset>
