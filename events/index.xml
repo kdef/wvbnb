@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Events on Willamette Valley Bed and Breakfast - Newberg, Oregon</title>
-    <link>https://kdef.github.com/wvbnb/events/</link>
+    <link>https://www.willamettevalleybandb.com/events/</link>
     <description>Recent content in Events on Willamette Valley Bed and Breakfast - Newberg, Oregon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://kdef.github.com/wvbnb/events/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.willamettevalleybandb.com/events/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
