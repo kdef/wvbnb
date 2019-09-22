@@ -1,12 +1,14 @@
 # Willamette Valley Bed and Breakfast
 
-[Willamette Valley Bed and Breakfast](https://willamettevalleybandb.com) is an inn located in the wine country of Oregon, USA. This repo holds the source for the website.
+[Willamette Valley Bed and Breakfast](https://www.willamettevalleybandb.com) is an inn located in the wine country of Oregon, USA. This repo holds the source for the website.
 
 ## Development
 
-Use `hugo` to generate the website HTML and assets.
+Use `hugo` (extended version) to generate the website HTML and assets.
 
 Hugo's templating and menu system are used to build most of the content. New pages should be added to the appropriate menus in `config.toml`. The base template in `layouts/_default/baseof.html` has multiple blocks and all of them have default content, except the `main` block.
+
+Always use the `relURL` function for URLs. This ensures that links work when the baseURL contains a path other than `/`, i.e. `kdef.github.io/wvbnb/`.
 
 * `title` - in `<head>` tag, defaults to `{{ .Params.Title }} "|" {{ .Site.Title }}`
 * `stylesheets` - in `<head>` tag, defaults to `stylesheets.html` partial
@@ -17,6 +19,6 @@ Hugo's templating and menu system are used to build most of the content. New pag
 ## Release
 
 1. Checkout and update the `master` branch
-2. Run the `release.sh` script to build the site with `HUGO_ENV=production`
-3. Checkout the `gh-pages` branch
-4. Commit the `production` directory and push
+2. Use `git tag -l` to see all previous releases
+3. Bump the version and `git tag` it
+4. Push with `git push --tags` to trigger a Travis CI publish to `gh-pages` branch
