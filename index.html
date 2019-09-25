@@ -21,7 +21,7 @@
 <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-<link rel="stylesheet" href="/style.main.min.2b254cd784d9d3e9b1416eabb99c521b335fcc646da67859325a59b19832ec1f.css">
+<link rel="stylesheet" href="/style.main.min.d674f514f3e9631406f33347a08b3394ca450a6e9e2752ca029d9c91ee961aa5.css">
 
 </head>
 
@@ -101,7 +101,7 @@
 <section id="about" class="about-section text-center bg-black">
   <div class="container">
     <div class="row">
-      <div id="about-content" class="col-lg-8 mx-auto mb-5">
+      <div id="about-content" class="col-lg-10 mx-auto mb-5">
         <h2 id="about-title" class="text-white mb-4">Home in Oregon Wine Country</h2>
         <p id="about-text" class="text-white-50">Willamette Valley Bed and Breakfast is our home in Newberg, Oregon and we would love to share it with you. To stay with us you can reserve online now or give us a call. We look forward to seeing you!</p>
         <a href="/about"><i class="fas fa-info-circle text-primary"></i> Learn more about us</a>
@@ -115,26 +115,26 @@
 <section id="reserve" class="reserve-section text-center bg-light">
   <div class="container">
     <div class="row">
-      <div class="col-md-10 col-lg-8 mx-auto text-center">
+      <div class="col-md-10 mx-auto text-center">
 
         <h2 class="mb-1">Reservations</h2>
         <p class="mb-4">We will be pleased to offer secure online reservations when we open later this year. For inquiries about advanced reservations feel free to give us a call.</p>
 
         <form action="#" method="POST">
           <div class="row row-sm-offset">
-            <div class="col-md-4 multi-horizontal" data-for="name">
+            <div class="col-md-4" data-for="name">
               <div class="form-group">
                 <label class="form-control-label display-7" for="name-form1-73">First Name</label>
                 <input disabled type="text" class="form-control" name="name" data-form-field="Name" required="" id="name-form1-73">
               </div>
             </div>
-            <div class="col-md-4 multi-horizontal" data-for="email">
+            <div class="col-md-4" data-for="email">
               <div class="form-group">
                 <label class="form-control-label display-7" for="email-form1-73">Last Name</label>
                 <input disabled type="text" class="form-control" name="email" data-form-field="Last Name" required="" id="email-form1-73">
               </div>
             </div>
-            <div class="col-md-4 multi-horizontal" data-for="guestnum">
+            <div class="col-md-4" data-for="guestnum">
               <div class="form-group">
                 <label class="form-control-label display-7" for="guestnum">Number of Guests</label>
                 <select disabled class="form-control" name="guestnum" data-form-field="Number of Guests" required="" id="guestnum">
@@ -146,21 +146,21 @@
           </div>
 
           <div class="row">
-            <div class="col-md-4 multi-horizontal" data-for="checkin">
+            <div class="col-md-4" data-for="checkin">
             <div class="form-group">
               <label >Check In</label>
               <input disabled type="date" name="checkin" max="3000-12-31"
                      min="1000-01-01" class="form-control" id="checkin">
             </div>
             </div>
-            <div class="col-md-4 multi-horizontal" data-for="checkout">
+            <div class="col-md-4" data-for="checkout">
             <div class="form-group">
               <label >Check Out</label>
               <input disabled type="date" name="checkout" min="1000-01-01"
                      max="3000-12-31" class="form-control" id="checkout">
             </div>
             </div>
-            <div class="col-md-4 multi-horizontal" data-for="available">
+            <div class="col-md-4" data-for="available">
             <div class="form-group">
               <button disabled style="background-color:grey" class="btn btn-primary" name="available" id="available">Coming Soon</button>
             </div>
@@ -232,7 +232,7 @@
 <section id="news" class="news-section bg-light">
 <div class="container">
   <div class="row">
-    <div class="col-md-10 col-lg-8 mx-auto text-center">
+    <div class="col-md-10 mx-auto text-center">
       <h2 class="mb-1">News</h2>
       <p class="mb-4">See our list of <a href="/events">upcoming local events</a> and other <a href="/posts">updates from us</a>.</p>
     </div>
@@ -240,7 +240,7 @@
   <div class="row">
     
     
-    <div class="col-md-4 col-lg-4">
+    <div class="col-md-4">
       
 <div class="card">
   
@@ -263,13 +263,18 @@
 <section id="signup" class="signup-section">
   <div class="container">
     <div class="row">
-      <div class="col-md-10 col-lg-8 mx-auto text-center">
+      <div class="col-md-10 mx-auto text-center">
 
         <h2 class="text-white mb-5">Subscribe to our newsletter</h2>
 
-        <form class="form-inline d-flex" action="https://formspree.io/formspree@willamettevalleybandb.com" method="POST">
-          <input name="email" type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-          <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+        <form class="form-inline" action="https://formspree.io/formspree@willamettevalleybandb.com" method="POST">
+          <label class="sr-only" for="first-name-signup">First Name</label>
+          <input name="firstName" type="text" class="form-control" placeholder="First name" id="first-name-signup" required>
+          <label class="sr-only" for="last-name-signup">Last Name</label>
+          <input name="lastName" type="text" class="form-control" placeholder="Last name" id="last-name-signup" required>
+          <label class="sr-only" for="inputEmail">Email Address</label>
+          <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Email address" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
         </form>
 
       </div>
