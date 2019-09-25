@@ -171,9 +171,14 @@
 
         <h2 class="text-white mb-5">Subscribe to our newsletter</h2>
 
-        <form class="form-inline d-flex" action="https://formspree.io/formspree@willamettevalleybandb.com" method="POST">
-          <input name="email" type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-          <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+        <form class="form-inline" action="https://formspree.io/formspree@willamettevalleybandb.com" method="POST">
+          <label class="sr-only" for="first-name-signup">First Name</label>
+          <input name="firstName" type="text" class="form-control" placeholder="First name" id="first-name-signup">
+          <label class="sr-only" for="last-name-signup">Last Name</label>
+          <input name="lastName" type="text" class="form-control" placeholder="Last name" id="last-name-signup">
+          <label class="sr-only" for="inputEmail">Email Address</label>
+          <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Email address">
+          <button type="submit" class="btn btn-primary">Subscribe</button>
         </form>
 
       </div>
