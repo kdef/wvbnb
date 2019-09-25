@@ -30,26 +30,26 @@
 <section id="reserve" class="reserve-section text-center bg-light">
   <div class="container">
     <div class="row">
-      <div class="col-md-10 col-lg-8 mx-auto text-center">
+      <div class="col-md-10 mx-auto text-center">
 
         <h2 class="mb-1">Reservations</h2>
         <p class="mb-4">{{ .Params.reserve_text }}</p>
 
         <form action="#" method="POST">
           <div class="row row-sm-offset">
-            <div class="col-md-4 multi-horizontal" data-for="name">
+            <div class="col-md-4" data-for="name">
               <div class="form-group">
                 <label class="form-control-label display-7" for="name-form1-73">First Name</label>
                 <input disabled type="text" class="form-control" name="name" data-form-field="Name" required="" id="name-form1-73">
               </div>
             </div>
-            <div class="col-md-4 multi-horizontal" data-for="email">
+            <div class="col-md-4" data-for="email">
               <div class="form-group">
                 <label class="form-control-label display-7" for="email-form1-73">Last Name</label>
                 <input disabled type="text" class="form-control" name="email" data-form-field="Last Name" required="" id="email-form1-73">
               </div>
             </div>
-            <div class="col-md-4 multi-horizontal" data-for="guestnum">
+            <div class="col-md-4" data-for="guestnum">
               <div class="form-group">
                 <label class="form-control-label display-7" for="guestnum">Number of Guests</label>
                 <select disabled class="form-control" name="guestnum" data-form-field="Number of Guests" required="" id="guestnum">
@@ -61,21 +61,21 @@
           </div>
 
           <div class="row">
-            <div class="col-md-4 multi-horizontal" data-for="checkin">
+            <div class="col-md-4" data-for="checkin">
             <div class="form-group">
               <label >Check In</label>
               <input disabled type="date" name="checkin" max="3000-12-31"
                      min="1000-01-01" class="form-control" id="checkin">
             </div>
             </div>
-            <div class="col-md-4 multi-horizontal" data-for="checkout">
+            <div class="col-md-4" data-for="checkout">
             <div class="form-group">
               <label >Check Out</label>
               <input disabled type="date" name="checkout" min="1000-01-01"
                      max="3000-12-31" class="form-control" id="checkout">
             </div>
             </div>
-            <div class="col-md-4 multi-horizontal" data-for="available">
+            <div class="col-md-4" data-for="available">
             <div class="form-group">
               <button disabled style="background-color:grey" class="btn btn-primary" name="available" id="available">Coming Soon</button>
             </div>
