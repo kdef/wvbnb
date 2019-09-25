@@ -16,7 +16,7 @@
 <section id="about" class="about-section text-center bg-black">
   <div class="container">
     <div class="row">
-      <div id="about-content" class="col-lg-8 mx-auto mb-5">
+      <div id="about-content" class="col-lg-10 mx-auto mb-5">
         <h2 id="about-title" class="text-white mb-4">{{ .Params.about_title }}</h2>
         <p id="about-text" class="text-white-50">{{ .Params.about_text }}</p>
         <a href="{{ "/about" | relURL }}"><i class="fas fa-info-circle text-primary"></i> Learn more about us</a>
@@ -147,7 +147,7 @@
 <section id="news" class="news-section bg-light">
 <div class="container">
   <div class="row">
-    <div class="col-md-10 col-lg-8 mx-auto text-center">
+    <div class="col-md-10 mx-auto text-center">
       <h2 class="mb-1">News</h2>
       <p class="mb-4">{{ .Params.news_text | markdownify }}</p>
     </div>
@@ -155,7 +155,7 @@
   <div class="row">
     {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
     {{ range first $n_posts (where .Site.RegularPages "Section" "posts") }}
-    <div class="col-md-4 col-lg-4">
+    <div class="col-md-4">
       {{ partial "card-with-image.html" . }}
     </div>
     {{ end }}
@@ -167,7 +167,7 @@
 <section id="signup" class="signup-section">
   <div class="container">
     <div class="row">
-      <div class="col-md-10 col-lg-8 mx-auto text-center">
+      <div class="col-md-10 mx-auto text-center">
 
         <h2 class="text-white mb-5">Subscribe to our newsletter</h2>
 
