@@ -14,6 +14,8 @@ enableRobotsTXT = true
 
   background_color_class = "bg-black"
 
+  availability_url = "https://secure.thinkreservations.com/willamettevalleybandb/reservations/availability"
+
 [menu]
   [[menu.about]]
     name = "About"
