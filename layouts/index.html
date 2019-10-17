@@ -35,49 +35,25 @@
         <h2 class="mb-1">Reservations</h2>
         <p class="mb-4">{{ .Params.reserve_text }}</p>
 
-        <form action="#" method="POST">
-          <div class="row row-sm-offset">
-            <div class="col-md-4" data-for="name">
-              <div class="form-group">
-                <label class="form-control-label display-7" for="name-form1-73">First Name</label>
-                <input disabled type="text" class="form-control" name="name" data-form-field="Name" required="" id="name-form1-73">
-              </div>
-            </div>
-            <div class="col-md-4" data-for="email">
-              <div class="form-group">
-                <label class="form-control-label display-7" for="email-form1-73">Last Name</label>
-                <input disabled type="text" class="form-control" name="email" data-form-field="Last Name" required="" id="email-form1-73">
-              </div>
-            </div>
-            <div class="col-md-4" data-for="guestnum">
-              <div class="form-group">
-                <label class="form-control-label display-7" for="guestnum">Number of Guests</label>
-                <select disabled class="form-control" name="guestnum" data-form-field="Number of Guests" required="" id="guestnum">
-                  <option value="2" selected="selected">2</option>
-                  <option value="1">1</option>
-                </select>
-              </div>
-            </div>
-          </div>
-
+        <form action="{{ .Site.Params.availability_url }}" method="GET">
           <div class="row">
             <div class="col-md-4" data-for="checkin">
             <div class="form-group">
               <label >Check In</label>
-              <input disabled type="date" name="checkin" max="3000-12-31"
+              <input type="date" name="start_date" max="3000-12-31"
                      min="1000-01-01" class="form-control" id="checkin">
             </div>
             </div>
             <div class="col-md-4" data-for="checkout">
             <div class="form-group">
               <label >Check Out</label>
-              <input disabled type="date" name="checkout" min="1000-01-01"
+              <input type="date" name="end_date" min="1000-01-01"
                      max="3000-12-31" class="form-control" id="checkout">
             </div>
             </div>
             <div class="col-md-4" data-for="available">
             <div class="form-group">
-              <button disabled style="background-color:grey" class="btn btn-primary" name="available" id="available">Coming Soon</button>
+              <button class="btn btn-primary">Check Availability</button>
             </div>
             </div>
           </div>

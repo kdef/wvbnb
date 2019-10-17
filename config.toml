@@ -14,6 +14,8 @@ enableRobotsTXT = true
 
   background_color_class = "bg-black"
 
+  availability_url = "https://secure.thinkreservations.com/willamettevalleybandb/reservations/availability"
+
 [menu]
   [[menu.about]]
     name = "About"
@@ -25,7 +27,7 @@ enableRobotsTXT = true
 
   [[menu.about]]
     name = "Reserve Now"
-    url = "/#reserve"
+    url = "https://secure.thinkreservations.com/willamettevalleybandb/reservations"
 
   [[menu.index]]
     name = "About"
@@ -58,7 +60,7 @@ enableRobotsTXT = true
 
   [[menu.page]]
     name = "Reserve Now"
-    url = "/#reserve"
+    url = "https://secure.thinkreservations.com/willamettevalleybandb/reservations"
 
   [[menu.post]]
     name = "All Posts"
@@ -66,7 +68,7 @@ enableRobotsTXT = true
 
   [[menu.post]]
     name = "Reserve Now"
-    url = "/#reserve"
+    url = "https://secure.thinkreservations.com/willamettevalleybandb/reservations"
 
   [[menu.event]]
     name = "All Events"
@@ -74,7 +76,7 @@ enableRobotsTXT = true
 
   [[menu.event]]
     name = "Reserve Now"
-    url = "/#reserve"
+    url = "https://secure.thinkreservations.com/willamettevalleybandb/reservations"
 
   [[menu.footer]]
     name = "About"
@@ -90,6 +92,14 @@ enableRobotsTXT = true
 
   [[menu.footer]]
     name = "Reservations"
-    url = "/#reserve"
+    url = "https://secure.thinkreservations.com/willamettevalleybandb/reservations"
+
+  [[menu.footer]]
+    name = "Gift Cards"
+    url = "https://secure.thinkreservations.com/willamettevalleybandb/gift-certificates"
+
+  [[menu.footer]]
+    name = "Privacy Policy"
+    url = "https://secure.thinkreservations.com/willamettevalleybandb/reservations/privacy-policy"
 
 [taxonomies]
