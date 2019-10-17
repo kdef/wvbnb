@@ -17,8 +17,8 @@
       <ul class="navbar-nav ml-auto">
         {{ range . }}
         <li class="nav-item">
-          {{/* keep scrollspy happy since #reserve is an anchor on another page */}}
-          {{ if strings.HasSuffix .URL "/#reserve" }}
+          {{/* keep scrollspy happy since reservation URL is another page */}}
+          {{ if strings.HasSuffix .URL "/reservations" }}
           <a class="nav-link js-scroll-trigger" href="{{ .URL }}" data-target="#contact">{{ .Name }}</a>
           {{ else }}
           <a class="nav-link js-scroll-trigger" href="{{ .URL }}">{{ .Name }}</a>
