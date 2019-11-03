@@ -22,13 +22,13 @@ suites_text: >-
   Custom built with all of your comforts in mind.  Each room has a king-sized
   bed, en-suite bath with heated floors, two-person soaking tub, separate
   shower, private patio, sitting area with fireplace, and climate control.
-suites_image: /img/uploads/img_2644.jpg
+suites_image: /img/suite.jpg
 breakfast_title: Home Cooking
 breakfast_text: >-
   Breakfast is served each morning at 9 A.M. in the Great Room.  We look forward
   to sharing our gourmet breakfast with you and your new friends. Gluten free,
   vegetarian, allergies and other food restrictions can be accommodated upon
   request.
-breakfast_image: /img/uploads/img_2704.jpg
+breakfast_image: /img/breakfast.jpg
 ---
 This field is not used.
