@@ -11,6 +11,7 @@ about_image: /img/about.jpg
 reserve_text: >-
   We are pleased to offer secure online reservations. For inquiries about last
   minute availability, or other questions, feel free to give us a call.
+regional_image: /img/region.jpg
 regional_title: Willamette Valley
 regional_text: >-
   Beautiful in any season, the Willamette Valley region will impress and inspire
