@@ -4,7 +4,7 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, #{fade-out($black, .9)} 0%,#{fade-out($black, .5)} 75%,$black 100%), url($bg-masthead);
+  background: linear-gradient(to bottom, #{fade-out($black, .9)} 0%,#{fade-out($black, .5)} 85%,$black 100%), url($bg-masthead);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -12,6 +12,7 @@
   h2 {
     font-family: 'Varela Round';
     letter-spacing: 0.8rem;
+    -webkit-text-stroke: 1px black;
   }
   @media(min-width: 768px) {
     h2 {
