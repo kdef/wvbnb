@@ -2,7 +2,6 @@ backend:
   name: github
   repo: kdef/wvbnb
   branch: master
-publish_mode: editorial_workflow
 media_folder: "static/img/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/img/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
@@ -47,10 +46,13 @@ collections:
           - {label: "About Text", name: "about_text", widget: "text"}
           - {label: "About Image", name: "about_image", widget: "image"}
           - {label: "Reserve Text", name: "reserve_text", widget: "text"}
+          - {label: "Regional Image", name: "regional_image", widget: "image"}
           - {label: "Regional Title", name: "regional_title", widget: "string"}
           - {label: "Regional Text", name: "regional_text", widget: "text"}
+          - {label: "Suites Image", name: "suites_image", widget: "image"}
           - {label: "Suites Title", name: "suites_title", widget: "string"}
           - {label: "Suites Text", name: "suites_text", widget: "text"}
+          - {label: "Breakfast Image", name: "breakfast_image", widget: "image"}`
           - {label: "Breakfast Title", name: "breakfast_title", widget: "string"}
           - {label: "Breakfast Text", name: "breakfast_text", widget: "text"}
           - {label: "News Text", name: "news_text", widget: "markdown"}
