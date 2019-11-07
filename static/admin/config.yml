@@ -52,7 +52,7 @@ collections:
           - {label: "Suites Image", name: "suites_image", widget: "image"}
           - {label: "Suites Title", name: "suites_title", widget: "string"}
           - {label: "Suites Text", name: "suites_text", widget: "text"}
-          - {label: "Breakfast Image", name: "breakfast_image", widget: "image"}`
+          - {label: "Breakfast Image", name: "breakfast_image", widget: "image"}
           - {label: "Breakfast Title", name: "breakfast_title", widget: "string"}
           - {label: "Breakfast Text", name: "breakfast_text", widget: "text"}
           - {label: "News Text", name: "news_text", widget: "markdown"}
