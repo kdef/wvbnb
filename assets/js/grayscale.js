@@ -1,6 +1,5 @@
 (function($) {
-  "use strict"; // Start of use strict 
-
+  "use strict";
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
@@ -40,4 +39,16 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-})(jQuery); // End of use strict
+  // Image slider - leave off the src on img tags
+  // use the data-lazy attribute like <img data-lazy=$URL>
+  $(document).ready(function() {
+    $(".slider").slick({
+      mobileFirst: true,
+      lazyLoad: "ondemand",
+      arrows: true,
+      dots: true
+    });
+  });
+    
+
+})(jQuery);
