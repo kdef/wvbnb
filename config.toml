@@ -22,6 +22,10 @@ enableRobotsTXT = true
     url = "#about"
 
   [[menu.about]]
+    name = "Suites"
+    url = "/suites"
+
+  [[menu.about]]
     name = "Location"
     url = "#location"
 
@@ -81,6 +85,10 @@ enableRobotsTXT = true
   [[menu.footer]]
     name = "About"
     url = "/about"
+
+  [[menu.footer]]
+    name = "Suites"
+    url = "/suites"
 
   [[menu.footer]]
     name = "Blog"

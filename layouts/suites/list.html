@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+{{ partial "page-nav.html" .Site.Menus.page }}
+
+{{ partial "a-page-header.html" .Page }}
+
+<section id="main" class="post-section bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-lg-8 mx-auto">
+        <h2 class="mb-1 text-center">{{ .Title }}</h2>
+        <hr>
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

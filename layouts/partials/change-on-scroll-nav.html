@@ -18,10 +18,10 @@
         {{ range . }}
         <li class="nav-item">
           {{/* keep scrollspy happy since reservation URL is another page */}}
-          {{ if strings.HasSuffix .URL "/reservations" }}
-          <a class="nav-link js-scroll-trigger" href="{{ .URL }}" data-target="#contact">{{ .Name }}</a>
-          {{ else }}
+          {{ if hasPrefix .URL "#" }}
           <a class="nav-link js-scroll-trigger" href="{{ .URL }}">{{ .Name }}</a>
+          {{ else }}
+          <a class="nav-link js-scroll-trigger" href="{{ .URL }}" data-target="#contact">{{ .Name }}</a>
           {{ end }}
         </li>
         {{ end }}
