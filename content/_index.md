@@ -11,8 +11,15 @@ about_image: /img/about.jpg
 reserve_text: >-
   We are pleased to offer secure online reservations. For inquiries about last
   minute availability, or other questions, feel free to give us a call.
-regional_image: /img/region.jpg
-regional_title: Willamette Valley
+regional_image_1: /img/entry_01.jpg
+regional_image_2: /img/blue_room_02.jpg
+regional_image_3: /img/red_room_03.jpg
+regional_image_4: /img/yellow_room_02.jpg
+regional_image_5: /img/green_room_02.jpg
+regional_image_6: /img/breakfast_02.jpg
+regional_image_7: /img/blue_room_01.jpg
+regional_image_8: /img/red_room_02.jpg
+regional_title: Willamette Valley Bed and Breakfast
 regional_text: >-
   Beautiful in any season, the Willamette Valley region will impress and inspire
   you. Our home is minutes away from some of the area's best wineries and

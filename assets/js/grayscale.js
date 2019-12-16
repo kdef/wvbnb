@@ -1,6 +1,5 @@
 (function($) {
-  "use strict"; // Start of use strict 
-
+  "use strict";
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
@@ -29,7 +28,7 @@
 
   // Collapse Navbar
   var navbarCollapse = function() {
-    if ($("#mainNav").offset().top > 100) {
+    if ($("#mainNav").offset() != undefined && $("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
     } else {
       $("#mainNav").removeClass("navbar-shrink");
@@ -40,4 +39,35 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-})(jQuery); // End of use strict
+  // Image slider - leave off the src on img tags
+  // use the data-lazy attribute like <img data-lazy=$URL>
+  $(".slider").slick({
+    mobileFirst: true,
+    lazyLoad: "ondemand",
+    arrows: true,
+    dots: true
+  });
+
+  ["red", "yellow", "green", "blue", "purple"].forEach(function(room) {
+    var disp =".display".concat(room);
+    var slicknav = ".nav".concat(room);
+
+    $(disp).slick({
+      mobileFirst: true,
+      lazyLoad: "ondemand",
+      arrows: false,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    });
+
+    $(slicknav).slick({
+      mobileFirst: true,
+      lazyLoad: "ondemand",
+      arrows: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      focusOnSelect: true,
+      asNavFor: disp
+    });
+  });
+})(jQuery);
