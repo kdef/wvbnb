@@ -9,42 +9,25 @@ We have five luxurious guest suites at our bed and breakfast. Each room has the 
 *  king bed
 *  en-suite bath with heated floors
 *  two-person soaking tub
-*  separate shower
-*  patio
 *  gas fireplace
-*  climate control
-*  mini fridge
-*  high-definition television
+*  separate shower
+*  private deck
+*  spa robes
+*  individual climate control
 *  wi-fi
+*  50 inch television
+*  USB ports
 
-## Red Room
+## Red Door Suite
 
 {{< gallery name="red" >}}
   {{< img src="/img/red_room_01.jpg" >}}
-  {{< img src="/img/red_room_02.jpg" >}}
   {{< img src="/img/red_room_03.jpg" >}}
   {{< img src="/img/red_room_04.jpg" >}}
+  {{< img src="/img/red_room_02.jpg" >}}
 {{< /gallery >}}
 
-## Yellow Room
-
-{{< gallery name="yellow" >}}
-  {{< img src="img/yellow_room_01.jpg" >}}
-  {{< img src="img/yellow_room_02.jpg" >}}
-  {{< img src="img/yellow_room_03.jpg" >}}
-  {{< img src="img/yellow_room_04.jpg" >}}
-{{< /gallery >}}
-
-## Green Room
-
-{{< gallery name="green" >}}
-  {{< img src="/img/green_room_01.jpg" >}}
-  {{< img src="/img/green_room_02.jpg" >}}
-  {{< img src="/img/green_room_03.jpg" >}}
-  {{< img src="/img/green_room_04.jpg" >}}
-{{< /gallery >}}
-
-## Blue Room
+## Blue Door Suite
 
 {{< gallery name="blue" >}}
   {{< img src="/img/blue_room_01.jpg" >}}
@@ -53,11 +36,29 @@ We have five luxurious guest suites at our bed and breakfast. Each room has the 
   {{< img src="/img/blue_room_04.jpg" >}}
 {{< /gallery >}}
 
-## Purple Room
+## Purple Door Suite
 
 {{< gallery name="purple" >}}
+  {{< img src="/img/purple_room_03.jpg" >}}
   {{< img src="/img/purple_room_01.jpg" >}}
   {{< img src="/img/purple_room_02.jpg" >}}
-  {{< img src="/img/purple_room_03.jpg" >}}
   {{< img src="/img/purple_room_04.jpg" >}}
+{{< /gallery >}}
+
+## Yellow Door Suite
+
+{{< gallery name="yellow" >}}
+  {{< img src="img/yellow_room_02.jpg" >}}
+  {{< img src="img/yellow_room_01.jpg" >}}
+  {{< img src="img/yellow_room_03.jpg" >}}
+  {{< img src="img/yellow_room_04.jpg" >}}
+{{< /gallery >}}
+
+## Green Door Suite
+
+{{< gallery name="green" >}}
+  {{< img src="/img/green_room_02.jpg" >}}
+  {{< img src="/img/green_room_01.jpg" >}}
+  {{< img src="/img/green_room_03.jpg" >}}
+  {{< img src="/img/green_room_04.jpg" >}}
 {{< /gallery >}}
