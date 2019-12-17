@@ -73,17 +73,9 @@
         <h2 class="mb-3">{{ .Params.regional_title }}</h4>
         <p>{{ .Params.regional_text }}</p>
 	<div class="slider">
-          <img src="{{ .Params.regional_image_1 | relURL }}" alt="Grape vineyards">
-          <img src="{{ .Params.regional_image_2 | relURL }}" alt="Grape vineyards">
-          <img src="{{ .Params.regional_image_3 | relURL }}" alt="Grape vineyards">
-          <img src="{{ .Params.regional_image_4 | relURL }}" alt="Grape vineyards">
-          <img src="{{ .Params.regional_image_5 | relURL }}" alt="Grape vineyards">
-          <img src="{{ .Params.regional_image_6 | relURL }}" alt="Grape vineyards">
-          <img src="{{ .Params.regional_image_7 | relURL }}" alt="Grape vineyards">
-          <img src="{{ .Params.regional_image_8 | relURL }}" alt="Grape vineyards">
-          <img src="{{ .Params.regional_image_9 | relURL }}" alt="Grape vineyards">
-          <img src="{{ .Params.regional_image_10 | relURL }}" alt="Grape vineyards">
-          <img src="{{ .Params.regional_image_11 | relURL }}" alt="Grape vineyards">
+    {{ range $img := .Params.regional_imgs }}
+          <img src="{{ $img.src | relURL }}" alt="{{ $img.alt }}">
+    {{ end }}
 	</div>
       </div>
     </div>
