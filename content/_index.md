@@ -11,14 +11,23 @@ about_image: /img/about.jpg
 reserve_text: >-
   We are pleased to offer secure online reservations. For inquiries about last
   minute availability, or other questions, feel free to give us a call.
-regional_image_1: /img/entry_01.jpg
-regional_image_2: /img/blue_room_02.jpg
-regional_image_3: /img/red_room_03.jpg
-regional_image_4: /img/yellow_room_02.jpg
-regional_image_5: /img/green_room_02.jpg
-regional_image_6: /img/breakfast_02.jpg
-regional_image_7: /img/blue_room_01.jpg
-regional_image_8: /img/red_room_02.jpg
+regional_imgs:
+  - src: /img/entry_01.jpg
+    alt: An entry way with glass ceiling and open frontdoor showing a large dining room table.
+  - src: /img/blue_room_02.jpg
+    alt: A full bathtub and open window showing a bed and fireplace.
+  - src: /img/red_room_03.jpg
+    alt: Two red chairs next to a fireplace with full glasses of red wine on a table.
+  - src: /img/yellow_room_02.jpg
+    alt: A white soaking bathtub with running water and a glass of white wine.
+  - src: /img/green_room_02.jpg
+    alt: A king bed with white sheets and a green blanket next to a fireplace.
+  - src: /img/blue_room_01.jpg
+    alt: A king bed with white sheets and a blue blanket.
+  - src: /img/red_room_02.jpg
+    alt: Two blue Adirondack chairs with glasses of red wine on a deck by a green lawn.
+  - src: /img/breakfast_02.jpg
+    alt: Two English muffin halves with ham and hollandaise sauce with asparagus
 regional_title: Willamette Valley Bed and Breakfast
 regional_text: >-
   Beautiful in any season, the Willamette Valley region will impress and inspire
