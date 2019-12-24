@@ -42,6 +42,7 @@
   // Image slider - leave off the src on img tags
   // use the data-lazy attribute like <img data-lazy=$URL>
   $(".slider").slick({
+    autoplay: true,
     mobileFirst: true,
     lazyLoad: "ondemand",
     arrows: true,
