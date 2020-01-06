@@ -10,7 +10,7 @@
       <div class="col-md-10 col-lg-8 mx-auto">
         <h2 class="mb-1 text-center">{{ .Title }}</h2>
         <hr>
-        {{ range .Pages.ByPublishDate.Reverse }}
+        {{ range .Pages.ByPublishDate }}
         <div class="row justify-content-center">
 
         {{ $featured_image := .Params.featured_image }}
