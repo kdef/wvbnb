@@ -1,5 +1,5 @@
 ---
-title: Dinner with Friends
+title: Dinner with Friends at Winderlea Vineyard and Winery
 date: 'January 25, 2020'
 external_link: >-
   https://winderlea.com/event/dinner-with-friends-guillen-family-wines/?instance_id=926
