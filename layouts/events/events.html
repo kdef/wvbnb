@@ -27,7 +27,11 @@
         {{ end }}
 
         <div class="col-md-7 col-lg-5 mb-4">
+          {{ if .Params.external_link }}
           <h4><a href="{{ .Params.external_link }}">{{ .Title }}</a></h4>
+          {{ else }}
+          <h4>{{ .Title }}</h4>
+          {{ end }}
           <p class="date"> {{ .Date.Format "Jan 2, 2006" }} </p>
           <p class="summary"> {{ .Content }}</p>
           {{ if .Params.external_link }}<a href="{{ .Params.external_link }}">Link</a>{{ end }}

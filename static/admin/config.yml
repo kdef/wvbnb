@@ -28,9 +28,9 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Event Date", name: "date", widget: "datetime"}
-      - {label: "Link", name: "external_link", widget: "string"}
-      - {label: "Featured Image", name: "featured_image", widget: "image"}
-      - {label: "Featured Image Alt Text", name: "featured_image_alt_text", widget: "string"}
+      - {label: "Link", name: "external_link", widget: "string", required: false}
+      - {label: "Featured Image", name: "featured_image", widget: "image", required: false}
+      - {label: "Featured Image Alt Text", name: "featured_image_alt_text", widget: "string", required: false}
       - {label: "Description", name: "body", widget: "markdown"}
   - name: "pages"
     label: "All Pages"
