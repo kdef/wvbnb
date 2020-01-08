@@ -7,8 +7,6 @@ featured_image: /img/uploads/Archery Summit crab feed photo.jpg
 ---
 <!--StartFragment-->
 
-### 8th Annual Crab Feast
-
 Friday, January 17 & Saturday, January 18, 2020
 
 Ring in the delectable Pacific Northwest shellfish season with our eighth annual Crab Feast. We’ll serve a special lineup of Archery Summit wines—including current releases and library selections—alongside the culinary creativity of Peter Janiak, our gifted executive chef. On full display will be fresh Oregon Dungeness crab, among the region’s most esteemed and true-to-place ingredients.
