@@ -34,9 +34,16 @@
       {{ else }}
       <h4>{{ .Title }}</h4>
       {{ end }}
-      <p class="date"> {{ .Date.Format "Jan 2, 2006" }} </p>
+
+      {{ $date := dateFormat "Jan 2, 2006" .Date }}
+      {{ if .Params.end_date }}
+        {{ if ne (time .Params.end_date).YearDay (time .Date).YearDay }}
+          {{ .Scratch.Set "end_date" (dateFormat "Jan 2, 2006" .Params.end_date) }}
+        {{ end }}
+      {{ end }}
+      <p class="date">{{ $date }}{{ if .Scratch.Get "end_date" }} to {{ .Scratch.Get "end_date" }}{{ end }}</p>
       <p class="summary"> {{ .Content }}</p>
-      {{ if .Params.external_link }}<a href="{{ .Params.external_link }}">Link</a>{{ end }}
+      {{ if .Params.external_link }}<a href="{{ .Params.external_link }}">More information</a>{{ end }}
     </div>
 
     </div>

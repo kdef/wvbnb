@@ -1,6 +1,7 @@
 ---
 title: Oregon Chardonnay Celebration
-date: 2020-02-22T23:00:00.000Z
+date: 2020-02-22T21:00:00.000Z
+end_date: 2020-02-22T23:00:00.000Z
 external_link: 'https://oregonchardonnaycelebration.org/'
 featured_image: /img/uploads/Oregon Chardonnay logo.gif
 featured_image_alt_text: ''
