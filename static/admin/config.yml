@@ -28,6 +28,7 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Event Date", name: "date", widget: "datetime"}
+      - {label: "Event End Date", name: "end_date", widget: "datetime", required: false}
       - {label: "Link", name: "external_link", widget: "string", required: false}
       - {label: "Featured Image", name: "featured_image", widget: "image", required: false}
       - {label: "Featured Image Alt Text", name: "featured_image_alt_text", widget: "string", required: false}

@@ -1,6 +1,7 @@
 ---
 title: Archery Summit 8th Annual Crab Feast
-date: 2020-01-18T02:00:00.000Z
+date: 2020-01-17T02:00:00.000Z
+end_date: 2020-01-18T02:00:00.000Z
 external_link: >-
   https://www.archerysummit.com/events/crab-feast/?utm_source=archerysummit.com&utm_medium=email&utm_campaign=010719_ASW_Events_ALL&utm_term=all&utm_content=header
 featured_image: /img/uploads/Archery Summit crab feed photo.jpg
