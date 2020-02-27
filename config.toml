@@ -34,6 +34,11 @@ enableRobotsTXT = true
     url = "https://secure.thinkreservations.com/willamettevalleybandb/reservations"
 
   [[menu.index]]
+    name = "Suites"
+    url = "/suites"
+    weight = 0
+
+  [[menu.index]]
     name = "About"
     url = "#about"
     weight = 1
