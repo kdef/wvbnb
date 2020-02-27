@@ -4,7 +4,7 @@ description: Guest suites at the Willamette Valley Bed and Breakfast.
 featured_image:
 featured_image_alt_text:
 ---
-We have five luxurious guest suites at our bed and breakfast. Each room has the following ammenities:
+We have five luxurious guest suites at our bed and breakfast. Each room has the following amenities:
 
 *  king bed
 *  en-suite bath with heated floors
