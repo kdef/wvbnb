@@ -21,7 +21,7 @@
           {{ if hasPrefix .URL "#" }}
           <a class="nav-link js-scroll-trigger" href="{{ .URL }}">{{ .Name }}</a>
           {{ else }}
-          <a class="nav-link js-scroll-trigger" href="{{ .URL }}" data-target="#contact">{{ .Name }}</a>
+          <a class="nav-link js-scroll-trigger" href="{{ .URL }}" data-target="#none">{{ .Name }}</a>
           {{ end }}
         </li>
         {{ end }}
