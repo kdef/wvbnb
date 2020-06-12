@@ -26,8 +26,18 @@ regional_imgs:
     alt: A king bed with white sheets and a blue blanket.
   - src: /img/red_room_02.jpg
     alt: Two blue Adirondack chairs with glasses of red wine on a deck by a green lawn.
+  - src: /img/breakfast_01.jpg
+    alt: A great room with long wooden table, fireplace, wall mounted tv, decorative lighting.
   - src: /img/breakfast_02.jpg
     alt: Two English muffin halves with ham and hollandaise sauce with asparagus
+  - src: /img/table_02.jpg
+    alt: A long wood table with several colorful place settings.
+  - src: /img/patio_01.jpg
+    alt: Patio with blue wicker chairs at a small table, plants, wine barrels.
+  - src: /img/view_01.jpg
+    alt: Two coffee mugs on a table with backyard and fence in the background.
+  - src: /img/front_01.jpg
+    alt: The Willamette Valley Bed and Breakfast sign and building.
 regional_title: Willamette Valley Bed and Breakfast
 regional_text: >-
   Beautiful in any season, the Willamette Valley region will impress and inspire
