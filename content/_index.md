@@ -14,12 +14,12 @@ reserve_text: >-
 regional_imgs:
   - src: /img/entry_01.jpg
     alt: An entry way with glass ceiling and open frontdoor showing a large dining room table.
-  - src: /img/blue_room_02.jpg
-    alt: A full bathtub and open window showing a bed and fireplace.
-  - src: /img/red_room_03.jpg
-    alt: Two red chairs next to a fireplace with full glasses of red wine on a table.
   - src: /img/yellow_room_02.jpg
     alt: A white soaking bathtub with running water and a glass of white wine.
+  - src: /img/red_room_03.jpg
+    alt: Two red chairs next to a fireplace with full glasses of red wine on a table.
+  - src: /img/blue_room_02.jpg
+    alt: A full bathtub and open window showing a bed and fireplace.
   - src: /img/green_room_02.jpg
     alt: A king bed with white sheets and a green blanket next to a fireplace.
   - src: /img/blue_room_01.jpg
