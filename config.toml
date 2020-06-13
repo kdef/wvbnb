@@ -18,6 +18,11 @@ enableRobotsTXT = true
 
 [menu]
   [[menu.about]]
+    name = "COVID-19 Update"
+    url = "/posts/covid-19-update/"
+    weight = 1
+
+  [[menu.about]]
     name = "About"
     url = "#about"
 
@@ -32,6 +37,11 @@ enableRobotsTXT = true
   [[menu.about]]
     name = "Reserve Now"
     url = "https://secure.thinkreservations.com/willamettevalleybandb/reservations"
+
+  [[menu.index]]
+    name = "COVID-19 Update"
+    url = "/posts/covid-19-update/"
+    weight = 1
 
   [[menu.index]]
     name = "Suites"
@@ -64,6 +74,11 @@ enableRobotsTXT = true
     weight = 6
 
   [[menu.page]]
+    name = "COVID-19 Update"
+    url = "/posts/covid-19-update/"
+    weight = 1
+
+  [[menu.page]]
     name = "About"
     url = "/about"
 
@@ -72,12 +87,22 @@ enableRobotsTXT = true
     url = "https://secure.thinkreservations.com/willamettevalleybandb/reservations"
 
   [[menu.post]]
+    name = "COVID-19 Update"
+    url = "/posts/covid-19-update/"
+    weight = 1
+
+  [[menu.post]]
     name = "All Posts"
     url = "/posts"
 
   [[menu.post]]
     name = "Reserve Now"
     url = "https://secure.thinkreservations.com/willamettevalleybandb/reservations"
+
+  [[menu.event]]
+    name = "COVID-19 Update"
+    url = "/posts/covid-19-update/"
+    weight = 1
 
   [[menu.event]]
     name = "All Events"
