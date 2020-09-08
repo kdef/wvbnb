@@ -49,6 +49,13 @@
     dots: true
   });
 
+  $(".review-slider").slick({
+    autoplay: true,
+    mobileFirst: true,
+    arrows: false,
+    dots: true
+  });
+
   ["red", "yellow", "green", "blue", "purple"].forEach(function(room) {
     var disp =".display".concat(room);
     var slicknav = ".nav".concat(room);

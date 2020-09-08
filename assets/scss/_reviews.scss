@@ -1,0 +1,8 @@
+// vertically center the review text in the row
+
+#reviews .slick-initialized .slick-slide {
+  float: inherit;
+  display: inline-block !important;
+  vertical-align: middle;
+}
+

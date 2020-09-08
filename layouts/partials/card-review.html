@@ -1,5 +1,6 @@
 <div>
-  <h4>{{ .name }}</h4>
-  <span>{{ .stars }}</span>
+  <h4 class="font-weight-bold">{{ .name }}</h4>
+  {{ $n_stars := .stars | int }}
+  <div class="mb-2 font-weight-bold">{{ range seq $n_stars }}★{{ end }}</div>
   <p>{{ .comment }}</p>
 </div>
