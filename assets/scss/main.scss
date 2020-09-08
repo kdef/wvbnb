@@ -18,7 +18,6 @@ $bg-masthead: '{{ "/img/bg-masthead.jpg" | relURL }}';
 $bg-signup: '{{ "/img/bg-signup.jpg" | relURL }}';
 $logo3: '{{ "/img/WVBB3_logo.svg" | relURL }}';
 
-@import 'mixins.scss';
 @import 'navbar.scss';
 @import 'masthead.scss';
 @import 'buttons.scss';
