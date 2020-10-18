@@ -49,6 +49,14 @@
     dots: true
   });
 
+  $(".review-slider").slick({
+    autoplay: true,
+    autoplaySpeed: 10000,
+    mobileFirst: true,
+    arrows: false,
+    dots: true
+  });
+
   ["red", "yellow", "green", "blue", "purple"].forEach(function(room) {
     var disp =".display".concat(room);
     var slicknav = ".nav".concat(room);

@@ -69,8 +69,8 @@
 
     <!-- Featured Images Row -->
     <div class="row align-items-center mb-4">
-      <div class="col-md-11 mx-auto text-center">
-        <h2 class="mb-3">{{ .Params.regional_title }}</h4>
+      <div class="col mx-auto text-center">
+        <h2 class="mb-3">{{ .Params.regional_title }}</h2>
         <p>{{ .Params.regional_text }}</p>
 	<div class="slider">
     {{ range $img := .Params.regional_imgs }}
@@ -118,11 +118,31 @@
   </div>
 </section>
 
+<section id="reviews" class="bg-light pb-5">
+  <div class="container">
+  <div class="row">
+    <div class="col-md-3 mx-auto my-auto text-center">
+      <div class="reviews-text">
+        <p>Discover what guests love most about staying at Willamette Valley Bed and Breakfast</p>
+        <p><a href="https://google.com" target="_blank"><i class="fas fa-comments"></i> Read all our Guest Reviews</a></p>
+      </div>
+    </div>
+    <div class="col-md-8 mx-auto">
+      <div class="review-slider">
+      {{ range .Site.Data.reviews }}
+        {{ partial "card-review.html" . }}
+      {{ end }}
+      </div>
+  </div>
+  </div>
+  </div>
+</section>
+
 <section id="news" class="news-section bg-light">
 <div class="container">
   <div class="row">
-    <div class="col-md-10 mx-auto text-center">
-      <h2 class="mb-1">News</h2>
+    <div class="col mx-auto text-center">
+      <h2>News</h2>
       <p class="mb-4">{{ .Params.news_text | markdownify }}</p>
       <p>Checkout our <a href="/posts">Blog</a> and <a href="/events">Events</a> for more!</p>
     </div>
@@ -130,7 +150,7 @@
   <div class="row">
     {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
     {{ range first $n_posts (where .Site.RegularPages "Section" "posts") }}
-    <div class="col-md-4">
+    <div class="col-lg-4">
       {{ partial "card-with-image.html" . }}
     </div>
     {{ end }}

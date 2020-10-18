@@ -1,4 +1,37 @@
-review:
-  - name: Louie
-    stars: 4
-    comment: Hello I like this bark
+- name: Alan
+  stars: 5
+  comment: |
+    Truly a special place. Celebrated our 20th anniversary here and it did not disappoint.  Every detail well conceived.  Meticulous smart design. The hosts are gracious and welcoming. The breakfast is gourmet.  Best value in the area.
+- name: Kathryn
+  stars: 5
+  comment: |
+    My boyfriend surprised me with a stay here for my birthday, and it was perfect! 
+     Dan, and Maureen have made their little b&b a paradise! There has been so much thought put into every detail and aspect. I don’t think there’s anything they haven’t thought of. 
+     The bed was incredibly comfortable, the bath is like a spa retreat. The breakfast that Dan prepared was delicious! We will definitely be returning in the not so distant future.
+     Thank you for spoiling us we truly enjoyed our stay!
+- name: Trish
+  stars: 5
+  comment: |
+    Dan and Maureen have done a tremendous job focusing on guest experience... talk about attention to detail (touch lights, heated floors, private porch, etc)!  Not only is the setup and scenery perfect, but the little touches like handmade soaps and featured art by local artists make the B&B a perfect getaway from the city.  The multi-course breakfast with fresh food from the garden was a great way to kick-off a day of wine tasting.
+- name: Nicole
+  stars: 5
+  comment: |
+    We had the best time staying with Dan and Maureen in June. There aren't enough positive things I could say about our experience. Their bed and breakfast is immaculate and beautiful! From the food they prepared us every morning to the homemade soaps in the bathroom, Dan and Maureen exceed expectations when it comes to attention to detail and hospitality. This was honestly the best bed and breakfast I have ever stayed at. Can't wait to return!
+- name: Brook
+  stars: 5
+  comment: |
+    Everything was absolutely perfect. Dan and Maureen were fabulous hosts and chefs with an incredible farm fresh breakfast. The rooms were beautiful, clean and cozy- perfect for a relaxing getaway. Great location in relation to the best restaurants and wineries. I don't know why anyone would stay anywhere else!
+- name: Maria
+  stars: 5
+  comment: |
+    Willamette Valley Bed and Breakfast was absolutely amazing, with a central location perfect for a Willamette Valley wine trip.  Dan and Maureen DeFrancia are delightful hosts and greet you with warm hospitality and serve a freshly prepared home cooked breakfast in the morning made with locally sourced ingredients.  I especially appreciated their electric vehicle charger.  The rooms are incredible with a king-sized bed, en-suite bath with heated floors, two-person soaking tub, separate shower, private patio, sitting area with fireplace, and climate control.  Highly recommend booking them for your next visit to Newberg!
+- name: Nick
+  stars: 5
+  comment: |
+    My wife and I had a wonderful stay over valentine's day weekend. The rooms are extremely comfortable - plush bed sheets, in-room fireplace, heated bathroom floor and a cozy outdoor patio. Quiet and in the country, but minutes to restaurants and wineries in Newberg and Dundee.
+    
+    Dan and Maureen were gracious hosts with keen attention to the details that matter. And the scones at breakfast were out of this world! Highly recommend!!
+- name: Emilie
+  stars: 5
+  comment: |
+    Dan and Maureen welcome you in with open arms to their beautiful and charming home. From booking to arrival, to breakfast and checkout they are available for every need and more. Experiencing the Willamette Valley B&B for yourself is the only way to grasp how wonderful of a job they do, offering not only a comfortable stay but a memory and Oregon experience to last a lifetime. From a 4-course breakfast, little baggies to take your homemade soap home and a handmade gift from Maureen- you can feel the Valley’s hospitality. We had a wonderful time celebrating Valentines Day with them in the romantic fire lit rooms! Thank you for everything Dan and Maureen! 10/10!!
