@@ -51,7 +51,7 @@
 
   $(".review-slider").slick({
     autoplay: true,
-    autoplaySpeed: 10000,
+    autoplaySpeed: 5000,
     mobileFirst: true,
     arrows: false,
     dots: true

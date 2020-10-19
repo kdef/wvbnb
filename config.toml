@@ -16,6 +16,8 @@ enableRobotsTXT = true
 
   availability_url = "https://secure.thinkreservations.com/willamettevalleybandb/reservations/availability"
 
+  google_reviews_url = "https://search.google.com/local/reviews?placeid=ChIJtbYAiK5BlVQRyNVJcxIvbcw"
+
 [menu]
   [[menu.about]]
     name = "About"
