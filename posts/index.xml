@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Willamette Valley Bed and Breakfast - Newberg, Oregon</title>
@@ -6,10 +6,20 @@
     <description>Recent content in Blog on Willamette Valley Bed and Breakfast - Newberg, Oregon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Nov 2019 03:30:49 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2020 00:00:01 +0000</lastBuildDate>
     
 	<atom:link href="https://www.willamettevalleybandb.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Willamette Valley Bed and Breakfast featured in Forbes Travel</title>
+      <link>https://www.willamettevalleybandb.com/posts/forbes-travel-feature/</link>
+      <pubDate>Wed, 05 Aug 2020 00:00:01 +0000</pubDate>
+      
+      <guid>https://www.willamettevalleybandb.com/posts/forbes-travel-feature/</guid>
+      <description>Check out this Forbes Travel article all about the lovely lavender farms in Newberg, OR. We are thrilled to be included in this great list of recommendations!
+ &amp;ldquo;This lovely B&amp;amp;B is just the place for those of us who crave the warmth and scale of a quaint B&amp;amp;B…but without the dusty doilies-and-damasks decor scheme. Opened less than a year ago, owners and hospitality industry vets Dan and Maureen DeFrancia went off on their own, purchasing the 1930’s farmhouse on six acres and building an addition with five modern, upscale suites.</description>
+    </item>
     
     <item>
       <title>Cultivating Experience for the Willamette Valley</title>
