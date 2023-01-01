@@ -1,0 +1,59 @@
+name: Deploy static site on release tag push
+
+on:
+  push:
+    tags:
+      - '[0-9]+.[0-9]+.[0-9]+'
+  workflow_dispatch: # allows manually running this workflow
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.109.0
+    steps:
+      - name: install hugo
+        run: |
+          base_uri="https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}" \
+          wget -O ${{ runner.temp }}/hugo.deb ${base_uri}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+
+      - name: checkout source repo
+        uses: actions/checkout@v3
+
+      - name: setup
+        uses: actions/configure-pages@v2
+
+      - name: generate site
+        env:
+          HUGO_ENV: production
+        run: hugo --buildFuture --destination production --minify
+
+      - name: upload output
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./production
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v1
