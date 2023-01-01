@@ -28,4 +28,4 @@ Blocks:
 1. Checkout and update the `master` branch
 2. Use `git tag -l` to see all previous releases
 3. Bump the version and `git tag` it
-4. Push with `git push --tags` to trigger a Travis CI publish to `gh-pages` branch (see [.travis.yml](.travis.yml))
+4. Push with `git push --tags` to trigger a GitHub Actions publish to `gh-pages` branch (see [.deploy.yml](.github/workflows/deploy.yml))
