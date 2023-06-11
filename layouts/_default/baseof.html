@@ -8,14 +8,6 @@
   {{/* For production make sure to set `HUGO_ENV="production"` env var */}}
   {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
   <meta name="robots" content="index, follow">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155360907-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-155360907-1');
-  </script>
   {{ else }}
   <meta name="robots" content="noindex, nofollow">
   {{ end }}
