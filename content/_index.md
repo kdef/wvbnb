@@ -1,4 +1,5 @@
 ---
+description: A cozy, luxurious bed and breakfast in Newberg, Oregon, minutes from the heart of wine country in the Willamette Valley. Call or click to reserve your visit!
 slogan: Explore the Willamette Valley
 featured_image: /img/bg-masthead.jpg
 featured_image_alt_text: A green vineyard

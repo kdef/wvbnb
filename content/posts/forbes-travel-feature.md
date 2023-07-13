@@ -1,6 +1,7 @@
 ---
 title: Willamette Valley Bed and Breakfast featured in Forbes Travel
 date: 2020-08-05T00:00:01Z
+description: A wine country bed and breakfast in Newberg, Oregon, recently featured in Forbes magazine article.
 featured_image: /img/forbes_travel-summer_road_trip-mention.jpg
 featured_image_alt_text: A field of lavender plants on a farm.
 ---

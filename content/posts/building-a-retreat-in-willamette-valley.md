@@ -1,6 +1,7 @@
 ---
 title: "Building a Retreat in Willamette Valley"
 date: 2019-06-11T23:25:05-07:00
+description: A wine country bed and breakfast in Newberg, Oregon which has taken years of planning and careful consideration to create the ideal retreat from life's worries.
 featured_image: "/img/posts/construction_20190323.jpg"
 featured_image_alt_text: "Wood-framed house addition under construction"
 ---

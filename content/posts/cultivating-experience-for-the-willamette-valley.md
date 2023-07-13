@@ -1,6 +1,7 @@
 ---
 title: Cultivating Experience for the Willamette Valley
 date: 2019-11-07T03:30:49.127Z
+description: A wine country bed and breakfast in Newberg, Oregon that cultivates a wine and food centered experience for your stay. Contact us today to get your reservation secured!
 featured_image: /img/uploads/red-room-03.jpg
 featured_image_alt_text: Red chairs with glasses of wine on a table by a fireplace.
 ---

@@ -1,8 +1,6 @@
 ---
 title: About our Bed and Breakfast
-description: >-
-  Willamette Valley Bed and Breakfast is an upscale retreat in the heart of
-  Oregon's wine country.
+description: Willamette Valley Bed and Breakfast is an upscale retreat in the heart of Oregon's wine country near Newberg and the Dundee Hills. Secure your reservation today!
 featured_image: /img/about.jpg
 featured_image_alt_text: A wine glass with red wine
 ---
