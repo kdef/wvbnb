@@ -1,6 +1,6 @@
 ---
 title: Suites
-description: Guest suites at the Willamette Valley Bed and Breakfast.
+description: All of our guest suites at the Willamette Valley Bed and Breakfast, as well as pictures and a list of amenities! Ask us about your favorite rooms for your reservation!
 featured_image:
 featured_image_alt_text:
 ---
